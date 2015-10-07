@@ -22,7 +22,7 @@ class MissionBriefingViewController: UIViewController
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        messageLabel.text = ""
         //
         // 3. The three UI elements need to be emptied on launch
         //    Hint: there is a string literal that represents empty
@@ -38,8 +38,10 @@ class MissionBriefingViewController: UIViewController
     
     // MARK: - Action Handlers
     
-    @IBAction func authenticateAgent(sender: AnyObject)
-    {
+    @IBAction func authenticateAgent(sender: AnyObject) {
+        self.resignFirstResponder()
+    }
+    
     
     
         // This will cause the keyboard to dismiss when the authenticate button is tapped
