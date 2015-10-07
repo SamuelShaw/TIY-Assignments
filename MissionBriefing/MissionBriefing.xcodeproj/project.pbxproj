@@ -12,6 +12,7 @@
 		00C8ECC21BC57C3C00A146EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C8ECC01BC57C3C00A146EE /* Main.storyboard */; };
 		00C8ECC41BC57C3C00A146EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00C8ECC31BC57C3C00A146EE /* Assets.xcassets */; };
 		00C8ECC71BC57C3C00A146EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C8ECC51BC57C3C00A146EE /* LaunchScreen.storyboard */; };
+		00C8ECCF1BC59E6B00A146EE /* TIYLogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C8ECCE1BC59E6B00A146EE /* TIYLogo@2x.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		00C8ECC31BC57C3C00A146EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00C8ECC61BC57C3C00A146EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00C8ECC81BC57C3C00A146EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00C8ECCE1BC59E6B00A146EE /* TIYLogo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "TIYLogo@2x.png"; path = "../../../2015--FALL--iOS/03--Good-Morning-Agent-Hunt/images/TIYLogo@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		00C8ECBB1BC57C3C00A146EE /* MissionBriefing */ = {
 			isa = PBXGroup;
 			children = (
+				00C8ECCE1BC59E6B00A146EE /* TIYLogo@2x.png */,
 				00C8ECBC1BC57C3C00A146EE /* AppDelegate.swift */,
 				00C8ECBE1BC57C3C00A146EE /* MissionBriefing.swift */,
 				00C8ECC01BC57C3C00A146EE /* Main.storyboard */,
@@ -123,6 +126,7 @@
 			files = (
 				00C8ECC71BC57C3C00A146EE /* LaunchScreen.storyboard in Resources */,
 				00C8ECC41BC57C3C00A146EE /* Assets.xcassets in Resources */,
+				00C8ECCF1BC59E6B00A146EE /* TIYLogo@2x.png in Resources */,
 				00C8ECC21BC57C3C00A146EE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

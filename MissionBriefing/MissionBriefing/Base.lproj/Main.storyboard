@@ -27,15 +27,48 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4p-LI-B74">
+                                <rect key="frame" x="256" y="96" width="88" height="30"/>
+                                <state key="normal" title="Authenticate"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CId-cB-yQa">
+                                <rect key="frame" x="279" y="134" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LRr-zB-qg2">
+                                <rect key="frame" x="60" y="163" width="480" height="52"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="TIYLogo.png" translatesAutoresizingMaskIntoConstraints="NO" id="cHH-Ms-91c">
+                                <rect key="frame" x="180" y="223" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="X4p-LI-B74" firstAttribute="centerX" secondItem="to4-lo-QU0" secondAttribute="centerX" id="0LP-dF-Chu"/>
+                            <constraint firstItem="X4p-LI-B74" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2WA-1C-JWp"/>
+                            <constraint firstItem="X4p-LI-B74" firstAttribute="top" secondItem="to4-lo-QU0" secondAttribute="bottom" constant="8" id="2ka-da-T0R"/>
+                            <constraint firstItem="LRr-zB-qg2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3J4-mY-EZV"/>
+                            <constraint firstItem="LRr-zB-qg2" firstAttribute="top" secondItem="CId-cB-yQa" secondAttribute="bottom" constant="8" id="6EY-5f-PvW"/>
+                            <constraint firstItem="LRr-zB-qg2" firstAttribute="centerX" secondItem="to4-lo-QU0" secondAttribute="centerX" id="C7c-Pb-Z4o"/>
                             <constraint firstItem="to4-lo-QU0" firstAttribute="top" secondItem="Y4e-Ex-KLU" secondAttribute="bottom" constant="8" id="LIZ-4o-ln1"/>
+                            <constraint firstItem="LRr-zB-qg2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="a5E-Zq-wav"/>
+                            <constraint firstItem="LRr-zB-qg2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bLD-oD-X7p"/>
+                            <constraint firstItem="cHH-Ms-91c" firstAttribute="top" secondItem="to4-lo-QU0" secondAttribute="bottom" constant="135" id="bwu-4b-w4E"/>
+                            <constraint firstItem="LRr-zB-qg2" firstAttribute="top" secondItem="to4-lo-QU0" secondAttribute="bottom" constant="75" id="cGK-s0-r2u"/>
+                            <constraint firstItem="CId-cB-yQa" firstAttribute="top" secondItem="X4p-LI-B74" secondAttribute="bottom" constant="8" id="dJB-gg-IC9"/>
                             <constraint firstItem="to4-lo-QU0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eap-Us-sCL"/>
                             <constraint firstItem="Y4e-Ex-KLU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h8K-wl-HRB"/>
                             <constraint firstItem="Y4e-Ex-KLU" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="l6r-GX-yOn"/>
+                            <constraint firstItem="CId-cB-yQa" firstAttribute="centerX" secondItem="X4p-LI-B74" secondAttribute="centerX" id="sUP-pq-qW9"/>
                             <constraint firstItem="to4-lo-QU0" firstAttribute="centerX" secondItem="Y4e-Ex-KLU" secondAttribute="centerX" id="siS-Un-PLA"/>
+                            <constraint firstItem="LRr-zB-qg2" firstAttribute="centerX" secondItem="CId-cB-yQa" secondAttribute="centerX" id="tCU-xx-hxQ"/>
                             <constraint firstItem="to4-lo-QU0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="uZt-IG-Vz0"/>
+                            <constraint firstItem="cHH-Ms-91c" firstAttribute="centerX" secondItem="to4-lo-QU0" secondAttribute="centerX" id="ya3-dc-Tvc"/>
                             <constraint firstItem="Y4e-Ex-KLU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="zMa-n4-lPZ"/>
                         </constraints>
                     </view>
@@ -44,4 +77,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="TIYLogo.png" width="240" height="212"/>
+    </resources>
 </document>
