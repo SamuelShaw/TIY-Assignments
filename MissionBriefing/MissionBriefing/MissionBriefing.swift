@@ -11,19 +11,23 @@ import UIKit
 class MissionBriefingViewController: UIViewController
 {
     // Place IBOutlet properties below
-    @IBOutlet var nameTextField1: UITextField!
-    @IBOutlet var nameTextField2: UITextField!
+    @IBOutlet var nameTextField: UITextField!
+    @IBOutlet var passTextField: UITextField!
+    @IBOutlet var messageLabel: UILabel!
+    
     
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        messageLabel.text = ""
         
         //
         // 3. The three UI elements need to be emptied on launch
         //    Hint: there is a string literal that represents empty
-        //
+        
+        override func viewDidLoad()
         
     }
     
