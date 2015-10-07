@@ -71,7 +71,7 @@ class Nose: HumanZombie{
         , infected: String) {
     }
 }
-func smellFleshFindFoodAndSniffKind(smellFlesh: String, findFood: String,  sniffKind)
+func smellFleshFindFoodAndSniffKind(smellFlesh: String, findFood: String, sniffKind:String)
 {
     
 }
@@ -87,7 +87,7 @@ class mouth: HumanZombie{
     }
     
 }
-func chewFleshDrinkBloodAndEatWorms(chewFlesh :String, drinkBlood: String, eatWorms) {
+func chewFleshDrinkBloodAndEatWorms(chewFlesh :String, drinkBlood: String, eatWorms:String) {
     
 }
 
@@ -101,7 +101,7 @@ class Drool: HumanZombie{
         
     }
 }
-func coverFleshDigestFleshAndBreakdownFlesh(coverFlesh: String, digestFlesh: String, breakdownFlesh) {
+func coverFleshDigestFleshAndBreakdownFlesh(coverFlesh: String, digestFlesh: String, breakdownFlesh:String) {
     
 }
 
@@ -130,7 +130,7 @@ class Stomach: HumanZombie{
         
     }
 }
-func breakdownFleshHoldsBloodAndHoldsWorms(breakdownFlesh: String, holdsBlood: String, holdsWorms)
+func breakdownFleshHoldsBloodAndHoldsWorms(breakdownFlesh: String, holdsBlood: String, holdsWorms:String)
 {
     
 }
@@ -145,7 +145,7 @@ class Back: HumanZombie{
         
     }
 }
-func keepBodyUpProvideBalanceProvideProtection(keepBodyUp: String, provideBalance:String, provideProtection)
+func keepBodyUpProvideBalanceProvideProtection(keepBodyUp: String, provideBalance:String, provideProtection:String)
 {
     
 }
@@ -192,7 +192,7 @@ class Hips: HumanZombie{
         
     }
 }
-func holdsTorsoHoldsAcidAndHoldsPantsUp(holdsTorso:String, holdsAcid:String, holdsPantsUp)
+func holdsTorsoHoldsAcidAndHoldsPantsUp(holdsTorso:String, holdsAcid:String, holdsPantsUp:String)
 {
     
 }
@@ -292,7 +292,7 @@ class Toes: HumanZombie{
         
     }
 }
-func grabSpoonsClimbPipesAndStabVictims(grabSpoons:String, climbPipes:String, stabVictims)
+func grabSpoonsClimbPipesAndStabVictims(grabSpoons:String, climbPipes:String, stabVictims:String)
 {
     
 }
