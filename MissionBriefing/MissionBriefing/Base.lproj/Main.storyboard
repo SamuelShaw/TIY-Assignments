@@ -13,7 +13,7 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MissionBriefing">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -30,6 +30,9 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4p-LI-B74">
                                 <rect key="frame" x="256" y="96" width="88" height="30"/>
                                 <state key="normal" title="Authenticate"/>
+                                <connections>
+                                    <action selector="authenticateAgent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vXG-Zx-3zc"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CId-cB-yQa">
                                 <rect key="frame" x="279" y="134" width="42" height="21"/>
@@ -71,6 +74,11 @@
                             <constraint firstItem="Y4e-Ex-KLU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="zMa-n4-lPZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="agentName" destination="Y4e-Ex-KLU" id="2jB-m6-Wug"/>
+                        <outlet property="agentPass" destination="to4-lo-QU0" id="OQQ-Fi-0Vv"/>
+                        <outlet property="messageLabel" destination="CId-cB-yQa" id="fbM-XO-YCd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

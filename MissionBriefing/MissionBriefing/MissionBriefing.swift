@@ -11,23 +11,22 @@ import UIKit
 class MissionBriefingViewController: UIViewController
 {
     // Place IBOutlet properties below
-    @IBOutlet var nameTextField: UITextField!
-    @IBOutlet var passTextField: UITextField!
-    @IBOutlet var messageLabel: UILabel!
     
+    @IBOutlet weak var agentName: UITextField!
     
+    @IBOutlet weak var agentPass: UITextField!
+    
+    @IBOutlet weak var messageLabel: UILabel!
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        messageLabel.text = ""
         
         //
         // 3. The three UI elements need to be emptied on launch
         //    Hint: there is a string literal that represents empty
-        
-        override func viewDidLoad()
+        //
         
     }
     
@@ -39,12 +38,15 @@ class MissionBriefingViewController: UIViewController
     
     // MARK: - Action Handlers
     
-    @IBAction func authenticateAgent(sender: UIButton)
+    @IBAction func authenticateAgent(sender: AnyObject)
     {
+    
+    
         // This will cause the keyboard to dismiss when the authenticate button is tapped
         if <#name text field property identifier goes here#>.isFirstResponder
         {
             <#name text field property identifier goes here#>.resignFirstResponder
+        
         }
         
         //
