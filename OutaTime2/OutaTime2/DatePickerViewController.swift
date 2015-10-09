@@ -1,27 +1,35 @@
 //
 //  DatePickerViewController.swift
-//  OutaTime
+//  OutaTime2
 //
 //  Created by Samuel Shaw on 10/8/15.
-//  Copyright © 2015 The Iron Yard. All rights reserved.
+//  Copyright © 2015 The Iron Yard. All rights reserved
 //
 
 import UIKit
 
-class DatePickerViewController: UIViewController {
-
-    let dateFormatter = NSDateFormatter()
-    let timeFormatter = NSDateFormatter()
+class DatePickerViewController: UIViewController,
+{
+    //IBOutlets
+//    @IBOutlet var datePicker: UIDatePicker!
+//    @IBOutlet var dateDisplay: UILabel!
+   
+    //Actions
+//    @IBAction func datePickerChanged(sender: AnyObject) {setDate()
+//    }
+//    
+//    
+//    
+//    let dateFormatter = NSDateFormatter()
     
-    //Mark - Date
+    //Mark: - Date
     
-    func setDate()
-    {
-        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
-        
-        
-        
-    }
+//    func setDate()
+//    {
+//        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+//    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
