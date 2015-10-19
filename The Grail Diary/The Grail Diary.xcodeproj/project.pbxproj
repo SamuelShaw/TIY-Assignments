@@ -12,6 +12,8 @@
 		00CF8BDC1BD54CA60015EEF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CF8BDA1BD54CA60015EEF5 /* Main.storyboard */; };
 		00CF8BDE1BD54CA60015EEF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00CF8BDD1BD54CA60015EEF5 /* Assets.xcassets */; };
 		00CF8BE11BD54CA60015EEF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CF8BDF1BD54CA60015EEF5 /* LaunchScreen.storyboard */; };
+		00CF8C001BD55F030015EEF5 /* MonumentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF8BFF1BD55F030015EEF5 /* MonumentsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		00CF8C021BD564DD0015EEF5 /* monuments.json in Resources */ = {isa = PBXBuildFile; fileRef = 00CF8C011BD564DD0015EEF5 /* monuments.json */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		00CF8BDD1BD54CA60015EEF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00CF8BE01BD54CA60015EEF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00CF8BE21BD54CA60015EEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00CF8BFF1BD55F030015EEF5 /* MonumentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonumentsTableViewController.swift; sourceTree = "<group>"; };
+		00CF8C011BD564DD0015EEF5 /* monuments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monuments.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,22 @@
 			children = (
 				00CF8BD61BD54CA60015EEF5 /* AppDelegate.swift */,
 				00CF8BD81BD54CA60015EEF5 /* ViewController.swift */,
+				00CF8BFF1BD55F030015EEF5 /* MonumentsTableViewController.swift */,
+				00CF8C011BD564DD0015EEF5 /* monuments.json */,
 				00CF8BDA1BD54CA60015EEF5 /* Main.storyboard */,
 				00CF8BDD1BD54CA60015EEF5 /* Assets.xcassets */,
 				00CF8BDF1BD54CA60015EEF5 /* LaunchScreen.storyboard */,
 				00CF8BE21BD54CA60015EEF5 /* Info.plist */,
+				00CF8BE81BD55B1B0015EEF5 /* monuments */,
 			);
 			path = "The Grail Diary";
+			sourceTree = "<group>";
+		};
+		00CF8BE81BD55B1B0015EEF5 /* monuments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = monuments;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00CF8BE11BD54CA60015EEF5 /* LaunchScreen.storyboard in Resources */,
+				00CF8C021BD564DD0015EEF5 /* monuments.json in Resources */,
 				00CF8BDE1BD54CA60015EEF5 /* Assets.xcassets in Resources */,
 				00CF8BDC1BD54CA60015EEF5 /* Main.storyboard in Resources */,
 			);
@@ -135,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00CF8BD91BD54CA60015EEF5 /* ViewController.swift in Sources */,
+				00CF8C001BD55F030015EEF5 /* MonumentsTableViewController.swift in Sources */,
 				00CF8BD71BD54CA60015EEF5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

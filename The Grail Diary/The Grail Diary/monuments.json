@@ -1,0 +1,60 @@
+ [
+  {
+    "name": "Hagia Sophia",
+    "location": "Turkey",
+    "architectural style": "Byzantine architecture; Height is 180'; Established: February 1, 1935"
+  },
+  {
+    "name": "Petra",
+    "location": "Jordan",
+    "architectural style": "Nabataean architecture; Height is up to 75 feet; Established: As early as 312 BC"
+    "picture": "hagia Sophia"
+  },
+  {
+    "name": "Greatest Pyramid of Giza",
+    "location": "Eygpt",
+    "architectural style": "Constructed of or faced with stone and brick and having rectangular and trapezoidal sides; Height is 455'; Construction started: 2560 BC"
+    "picture": "greatest pyramid of Giza"
+  },
+  {
+    "name": "Machu Picchu",
+    "location": "Peru",
+    "architectural style": "architectural equilibrium; Elevation: 7,972'; Established: 1450"
+    "picture": "Machu Picchu, Peru"
+  },
+  {
+    "name": "The Coloseum",
+    "location": "Italy",
+    "architectural style": "Ancient Roman architecture; Area: 6 acres; Construction started: 70 AD"
+    "picture": "The colloseum, Italy"
+  },
+  {
+    "name": "Chichén Itzá",
+    "location": "Mexico",
+    "architectural style": "Maya architecture; Height is 98'; Established: 600 AD"
+    "picture": "Chichén Itzá, Mexico"
+  },
+  {
+    "name": "Wat Phra Si Sanphet",
+    "location": "Thailand",
+    "architectural style": "Sukhothai style; Height is 16 meters; Built: 1448 AD"
+    "picture": "Wat Phra Si Sanphet, Thailand"
+  },
+  {
+    "name": "Moai",
+    "location": "Easter Island",
+    "architectural style": "limbless bodies; Easter Island heads ar up to 20 meters tall; Built: Between 1250 and 1500"
+    "picture": "Moai, Easter Island"
+  },
+  {
+    "name": "Angkor Wat",
+    "location": "Cambodia",
+    "architectural style": "Khmer; Height is 213 meters; Built: Early 12th Century AD"
+  },
+  {
+  "name": "Taj Mahal",
+  "location": "India",
+  "architectural style": "Mughal architecture, Iranian architecture; Height is 240'; Established: 1648"
+  "picture": "The Taj Mahal, India"
+  }
+]
