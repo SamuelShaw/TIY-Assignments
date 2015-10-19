@@ -9,9 +9,20 @@
 import UIKit
 
 class MonumentsTableViewController: UITableViewController {
+    
+    var monuments = Array<Monument>()
+    
+    var name: String = ""
+    var location: String = ""
+    var architecturalStyle: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Historical Monuments"
+        
+        loadmonumentList()
+        
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -29,23 +40,64 @@ class MonumentsTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return monuments.count
     }
 
-    /*
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("monumentCell", forIndexPath: indexPath)
 
         // Configure the cell...
+        
+        let amonument = monuments[indexPath.row]
+        
+        //        cell.textLabel?.text = amonument.name
+        cell.textLabel?.text = amonument.name
+        cell.detailTextLabel?.text = amonument.location
 
         return cell
     }
-    */
+    
+    func loadmonumentList()
+    {
+        do
+        {
+            let filePath = NSBundle.mainBundle().pathForResource("monuments", ofType: "json")
+            let dataFromFile = NSData(contentsOfFile: filePath!)
+            let monumentData: NSArray! = try NSJSONSerialization.JSONObjectWithData(dataFromFile!, options: []) as! NSArray
+            
+            for monumentDictionary in monumentData
+            {
+                let amonument = Monument(dictionary: monumentDictionary as! NSDictionary)
+                
+                monuments.append(amonument)
+            }
+                    monuments.sortInPlace{$0.name < $1.name}
+            
+        }
+        catch let error as NSError
+        {
+            print(error)
+        }
+        
+    }
+    
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath)
+    {
+        let amonument = monuments[indexPath.row]
+        let NVCfromTemplate = storyboard?.instantiateViewControllerWithIdentifier("MonumentDetailViewController") as! MonumentDetailViewController
+        NVCfromTemplate.monument = amonument
+        presentViewController(NVCfromTemplate, animated: true, completion: nil)
+        
+    }
+        
+    
 
     /*
     // Override to support conditional editing of the table view.

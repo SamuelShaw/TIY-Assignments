@@ -14,6 +14,8 @@
 		00CF8BE11BD54CA60015EEF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00CF8BDF1BD54CA60015EEF5 /* LaunchScreen.storyboard */; };
 		00CF8C001BD55F030015EEF5 /* MonumentsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF8BFF1BD55F030015EEF5 /* MonumentsTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		00CF8C021BD564DD0015EEF5 /* monuments.json in Resources */ = {isa = PBXBuildFile; fileRef = 00CF8C011BD564DD0015EEF5 /* monuments.json */; settings = {ASSET_TAGS = (); }; };
+		00CF8C041BD57EA60015EEF5 /* Monument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF8C031BD57EA60015EEF5 /* Monument.swift */; settings = {ASSET_TAGS = (); }; };
+		00CF8C081BD5879F0015EEF5 /* MonumentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF8C071BD5879F0015EEF5 /* MonumentDetailViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		00CF8BE21BD54CA60015EEF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00CF8BFF1BD55F030015EEF5 /* MonumentsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonumentsTableViewController.swift; sourceTree = "<group>"; };
 		00CF8C011BD564DD0015EEF5 /* monuments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = monuments.json; sourceTree = "<group>"; };
+		00CF8C031BD57EA60015EEF5 /* Monument.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monument.swift; sourceTree = "<group>"; };
+		00CF8C071BD5879F0015EEF5 /* MonumentDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonumentDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				00CF8BD61BD54CA60015EEF5 /* AppDelegate.swift */,
 				00CF8BD81BD54CA60015EEF5 /* ViewController.swift */,
 				00CF8BFF1BD55F030015EEF5 /* MonumentsTableViewController.swift */,
+				00CF8C031BD57EA60015EEF5 /* Monument.swift */,
+				00CF8C071BD5879F0015EEF5 /* MonumentDetailViewController.swift */,
 				00CF8C011BD564DD0015EEF5 /* monuments.json */,
 				00CF8BDA1BD54CA60015EEF5 /* Main.storyboard */,
 				00CF8BDD1BD54CA60015EEF5 /* Assets.xcassets */,
@@ -149,7 +155,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00CF8C041BD57EA60015EEF5 /* Monument.swift in Sources */,
 				00CF8BD91BD54CA60015EEF5 /* ViewController.swift in Sources */,
+				00CF8C081BD5879F0015EEF5 /* MonumentDetailViewController.swift in Sources */,
 				00CF8C001BD55F030015EEF5 /* MonumentsTableViewController.swift in Sources */,
 				00CF8BD71BD54CA60015EEF5 /* AppDelegate.swift in Sources */,
 			);
