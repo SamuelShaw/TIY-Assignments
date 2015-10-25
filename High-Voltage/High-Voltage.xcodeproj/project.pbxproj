@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		000B2B3C1BDAB7D800FD2C98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B2B3B1BDAB7D800FD2C98 /* AppDelegate.swift */; };
-		000B2B3E1BDAB7D800FD2C98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000B2B3D1BDAB7D800FD2C98 /* ViewController.swift */; };
 		000B2B411BDAB7D800FD2C98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000B2B3F1BDAB7D800FD2C98 /* Main.storyboard */; };
 		000B2B431BDAB7D800FD2C98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000B2B421BDAB7D800FD2C98 /* Assets.xcassets */; };
 		000B2B461BDAB7D800FD2C98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 000B2B441BDAB7D800FD2C98 /* LaunchScreen.storyboard */; };
+		0096D40A1BDD4C4800A9F3BA /* VoltageMainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0096D4091BDD4C4800A9F3BA /* VoltageMainTableViewController.swift */; };
+		0096D40E1BDD557500A9F3BA /* VoltageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0096D40D1BDD557400A9F3BA /* VoltageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		000B2B381BDAB7D800FD2C98 /* High-Voltage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "High-Voltage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		000B2B3B1BDAB7D800FD2C98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		000B2B3D1BDAB7D800FD2C98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		000B2B401BDAB7D800FD2C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		000B2B421BDAB7D800FD2C98 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		000B2B451BDAB7D800FD2C98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		000B2B471BDAB7D800FD2C98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0096D4091BDD4C4800A9F3BA /* VoltageMainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoltageMainTableViewController.swift; sourceTree = "<group>"; };
+		0096D40D1BDD557400A9F3BA /* VoltageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoltageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				000B2B3B1BDAB7D800FD2C98 /* AppDelegate.swift */,
-				000B2B3D1BDAB7D800FD2C98 /* ViewController.swift */,
+				0096D4091BDD4C4800A9F3BA /* VoltageMainTableViewController.swift */,
+				0096D40D1BDD557400A9F3BA /* VoltageTableViewCell.swift */,
 				000B2B3F1BDAB7D800FD2C98 /* Main.storyboard */,
 				000B2B421BDAB7D800FD2C98 /* Assets.xcassets */,
 				000B2B441BDAB7D800FD2C98 /* LaunchScreen.storyboard */,
@@ -134,8 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				000B2B3E1BDAB7D800FD2C98 /* ViewController.swift in Sources */,
 				000B2B3C1BDAB7D800FD2C98 /* AppDelegate.swift in Sources */,
+				0096D40E1BDD557500A9F3BA /* VoltageTableViewCell.swift in Sources */,
+				0096D40A1BDD4C4800A9F3BA /* VoltageMainTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +289,7 @@
 				000B2B4C1BDAB7D800FD2C98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
