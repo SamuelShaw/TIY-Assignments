@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		00B4ABAC1BE0203500FDA464 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4ABAB1BE0203500FDA464 /* AppDelegate.swift */; };
-		00B4ABAE1BE0203500FDA464 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4ABAD1BE0203500FDA464 /* ViewController.swift */; };
+		00B4ABAE1BE0203500FDA464 /* MissionBriefingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B4ABAD1BE0203500FDA464 /* MissionBriefingViewController.swift */; };
 		00B4ABB11BE0203500FDA464 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B4ABAF1BE0203500FDA464 /* Main.storyboard */; };
 		00B4ABB31BE0203500FDA464 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00B4ABB21BE0203500FDA464 /* Assets.xcassets */; };
 		00B4ABB61BE0203500FDA464 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00B4ABB41BE0203500FDA464 /* LaunchScreen.storyboard */; };
+		00B4ABBE1BE026B200FDA464 /* TIYLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 00B4ABBD1BE026B200FDA464 /* TIYLogo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		00B4ABA81BE0203500FDA464 /* Mission-Briefing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Mission-Briefing.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00B4ABAB1BE0203500FDA464 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		00B4ABAD1BE0203500FDA464 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		00B4ABAD1BE0203500FDA464 /* MissionBriefingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionBriefingViewController.swift; sourceTree = "<group>"; };
 		00B4ABB01BE0203500FDA464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		00B4ABB21BE0203500FDA464 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00B4ABB51BE0203500FDA464 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00B4ABB71BE0203500FDA464 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		00B4ABBD1BE026B200FDA464 /* TIYLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = TIYLogo.png; path = ../TIYLogo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				00B4ABAB1BE0203500FDA464 /* AppDelegate.swift */,
-				00B4ABAD1BE0203500FDA464 /* ViewController.swift */,
+				00B4ABAD1BE0203500FDA464 /* MissionBriefingViewController.swift */,
 				00B4ABAF1BE0203500FDA464 /* Main.storyboard */,
 				00B4ABB21BE0203500FDA464 /* Assets.xcassets */,
 				00B4ABB41BE0203500FDA464 /* LaunchScreen.storyboard */,
 				00B4ABB71BE0203500FDA464 /* Info.plist */,
+				00B4ABBD1BE026B200FDA464 /* TIYLogo.png */,
 			);
 			path = "Mission-Briefing";
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00B4ABB61BE0203500FDA464 /* LaunchScreen.storyboard in Resources */,
+				00B4ABBE1BE026B200FDA464 /* TIYLogo.png in Resources */,
 				00B4ABB31BE0203500FDA464 /* Assets.xcassets in Resources */,
 				00B4ABB11BE0203500FDA464 /* Main.storyboard in Resources */,
 			);
@@ -135,7 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00B4ABAE1BE0203500FDA464 /* ViewController.swift in Sources */,
+				00B4ABAE1BE0203500FDA464 /* MissionBriefingViewController.swift in Sources */,
 				00B4ABAC1BE0203500FDA464 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
