@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "container:Forecaster/Forecaster.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:../../Downloads/clipart-cat-line-art-2fc7.png">
+   </FileRef>
+   <FileRef
+      location = "group:../../Downloads/white-paw-print-md.png">
+   </FileRef>
+</Workspace>
