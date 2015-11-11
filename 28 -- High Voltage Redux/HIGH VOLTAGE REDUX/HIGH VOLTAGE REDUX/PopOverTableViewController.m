@@ -1,25 +1,27 @@
 //
-//  HighVoltageTableViewController.m
+//  PopOverTableViewController.m
 //  HIGH VOLTAGE REDUX
 //
-//  Created by david on 11/11/15.
+//  Created by Samuel Shaw on 11/11/15.
 //  Copyright © 2015 The Iron Yard. All rights reserved.
 //
 
-#import "HighVoltageTableViewController.h"
 #import "PopOverTableViewController.h"
 
-@interface HighVoltageTableViewController ()
+@interface PopOverTableViewController ()
 
 @end
 
-@implementation HighVoltageTableViewController
+@implementation PopOverTableViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
     
- 
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
