@@ -15,6 +15,7 @@
 		00FE18971BF3B161004610D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FE18961BF3B161004610D9 /* Assets.xcassets */; };
 		00FE189A1BF3B161004610D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FE18981BF3B161004610D9 /* LaunchScreen.storyboard */; };
 		635091C61BF3B237009F5774 /* HighVoltageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 635091C51BF3B237009F5774 /* HighVoltageTableViewController.m */; };
+		635091CA1BF3CA64009F5774 /* Brainerino.m in Sources */ = {isa = PBXBuildFile; fileRef = 635091C91BF3CA64009F5774 /* Brainerino.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		00FE189B1BF3B161004610D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		635091C41BF3B237009F5774 /* HighVoltageTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighVoltageTableViewController.h; sourceTree = "<group>"; };
 		635091C51BF3B237009F5774 /* HighVoltageTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighVoltageTableViewController.m; sourceTree = "<group>"; };
+		635091C81BF3CA64009F5774 /* Brainerino.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brainerino.h; sourceTree = "<group>"; };
+		635091C91BF3CA64009F5774 /* Brainerino.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brainerino.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,15 +48,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0076064D1BF3B51100E1ED48 /* View Controllers */ = {
+		0076064D1BF3B51100E1ED48 /* headers */ = {
 			isa = PBXGroup;
 			children = (
 				0076064A1BF3B50300E1ED48 /* PopOverTableViewController.h */,
-				0076064B1BF3B50300E1ED48 /* PopOverTableViewController.m */,
 				635091C41BF3B237009F5774 /* HighVoltageTableViewController.h */,
-				635091C51BF3B237009F5774 /* HighVoltageTableViewController.m */,
 			);
-			name = "View Controllers";
+			name = headers;
 			sourceTree = "<group>";
 		};
 		00FE187E1BF3B161004610D9 = {
@@ -76,11 +77,15 @@
 			isa = PBXGroup;
 			children = (
 				00FE18931BF3B161004610D9 /* Main.storyboard */,
-				0076064D1BF3B51100E1ED48 /* View Controllers */,
-				635091C71BF3B245009F5774 /* garbage */,
-				00FE188A1BF3B161004610D9 /* Supporting Files */,
 				0076064E1BF3C37500E1ED48 /* CalcCell.h */,
 				0076064F1BF3C37500E1ED48 /* CalcCell.m */,
+				0076064B1BF3B50300E1ED48 /* PopOverTableViewController.m */,
+				635091C51BF3B237009F5774 /* HighVoltageTableViewController.m */,
+				0076064D1BF3B51100E1ED48 /* headers */,
+				635091C71BF3B245009F5774 /* garbage */,
+				00FE188A1BF3B161004610D9 /* Supporting Files */,
+				635091C81BF3CA64009F5774 /* Brainerino.h */,
+				635091C91BF3CA64009F5774 /* Brainerino.m */,
 			);
 			path = "HIGH VOLTAGE REDUX";
 			sourceTree = "<group>";
@@ -178,6 +183,7 @@
 			files = (
 				635091C61BF3B237009F5774 /* HighVoltageTableViewController.m in Sources */,
 				0076064C1BF3B50300E1ED48 /* PopOverTableViewController.m in Sources */,
+				635091CA1BF3CA64009F5774 /* Brainerino.m in Sources */,
 				007606501BF3C37500E1ED48 /* CalcCell.m in Sources */,
 				00FE188F1BF3B161004610D9 /* AppDelegate.m in Sources */,
 				00FE188C1BF3B161004610D9 /* main.m in Sources */,

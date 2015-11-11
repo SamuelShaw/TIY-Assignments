@@ -8,8 +8,13 @@
 
 #import "HighVoltageTableViewController.h"
 #import "PopOverTableViewController.h"
+#import "CalcCell.h"
+#import "Brainerino.h"
 
 @interface HighVoltageTableViewController ()
+{
+    Brainerino *brain;
+}
 
 @property NSArray *allItems;
 @property NSMutableArray *remainingItems;
@@ -27,6 +32,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     self.allItems = @[@"AMPS", @"WATTS", @"VOLTS", @"OHMS"];
     self.remainingItems = [[NSMutableArray alloc] initWithArray:self.allItems];
     self.shownItems = [[NSMutableArray alloc] init];
@@ -58,60 +64,24 @@
     
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     
-    for(NSString *item in self.remainingItems)
+    if([self.remainingItems containsObject:chosenItem])
     {
-        if([item isEqualToString:chosenItem])
-        {
-            [self.remainingItems removeObject:item];
-        }
+        [self.remainingItems removeObject:chosenItem];
     }
+    
+    //TODO add button 2 item check
     
     [self.tableView reloadData];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CalcCell" forIndexPath:indexPath];
+    CalcCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CalcCell" forIndexPath:indexPath];
     
-    // Configure the cell...
+    NSString *item = self.shownItems[indexPath.row];
+    cell.elecLabel.text = item;
     
     return cell;
 }
-
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
 
 #pragma mark - Navigation
 
@@ -140,6 +110,97 @@
 {
     return UIModalPresentationNone;
 }
+- (IBAction)calculateButtonTapped:(UIButton *)sender
+{
+    [self calculate];
+}
 
+- (void)calculate
+{
+    brain = [[Brainerino alloc] init];
+    
+    NSArray *visibleCells = self.tableView.visibleCells;
+    
+    for (CalcCell *cell in visibleCells)
+    {
+        NSString *cellLabel = cell.elecLabel.text;
+        NSString *cellTextfield = cell.elecTextField.text;
+        
+        [self checkCellLabel:cellLabel textfield:cellTextfield];
+        
+        [brain calculate];
+    }
+    
+    for (NSString *item in self.allItems)
+    {
+        if(![self.shownItems containsObject:item])
+        {
+            [self.shownItems addObject:item];
+        }
+    }
+    
+    [self.tableView reloadData];
+    
+    [self populateCellsWithAnswers];
+
+    [self.tableView reloadData];
+}
+
+- (BOOL)checkCellLabel:(NSString *) label textfield:(NSString *)textfield
+{
+    if([label isEqualToString:@"WATTS"])
+    {
+        double watts = [textfield doubleValue];
+        brain.watts = watts;
+    }
+    else if([label isEqualToString:@"VOLTS"])
+    {
+        double volts = [textfield doubleValue];
+        brain.volts = volts;
+    }
+    else if([label isEqualToString:@"AMPS"])
+    {
+        double amps = [textfield doubleValue];
+        brain.amps = amps;
+    }
+    else if([label isEqualToString:@"OHMS"])
+    {
+        double ohms = [textfield doubleValue];
+        brain.ohms = ohms;
+    }
+
+    return YES;
+}
+
+- (void)populateCellsWithAnswers
+{
+    NSArray *cells = [self.tableView visibleCells];
+    for(CalcCell *cell in cells)
+    {
+        if([cell.elecLabel.text isEqualToString:@"OHMS"])
+        {
+            NSString *ohmStr = [NSString stringWithFormat: @"%f", brain.ohms];
+            cell.elecTextField.text = ohmStr;
+        }
+        
+        if([cell.elecLabel.text isEqualToString:@"VOLTS"])
+        {
+            NSString *voltStr = [NSString stringWithFormat: @"%f", brain.volts];
+            cell.elecTextField.text = voltStr;
+        }
+        
+        if([cell.elecLabel.text isEqualToString:@"AMPS"])
+        {
+            NSString *ampStr = [NSString stringWithFormat: @"%f", brain.amps];
+            cell.elecTextField.text = ampStr;
+        }
+        
+        if([cell.elecLabel.text isEqualToString:@"WATTS"])
+        {
+            NSString *wattStr = [NSString stringWithFormat: @"%f", brain.watts];
+            cell.elecTextField.text = wattStr;
+        }
+    }
+}
 
 @end
