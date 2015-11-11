@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HighVoltageTableViewController.h"
 
 @interface PopOverTableViewController : UITableViewController
+
+@property (nonatomic) id <PopoverProtocol> delegate;
+@property (nonatomic) NSMutableArray *items;
 
 @end

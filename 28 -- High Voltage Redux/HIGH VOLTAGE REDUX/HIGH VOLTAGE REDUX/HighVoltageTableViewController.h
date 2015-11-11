@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HighVoltageTableViewController : UITableViewController
+@protocol PopoverProtocol
+
+-(void)itemWasChosen:(NSString *)chosenItem;
+
+@end
+
+
+@interface HighVoltageTableViewController : UITableViewController <PopoverProtocol, UIPopoverPresentationControllerDelegate>
 
 @end

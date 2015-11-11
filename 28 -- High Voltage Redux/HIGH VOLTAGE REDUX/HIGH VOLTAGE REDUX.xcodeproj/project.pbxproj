@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0076064C1BF3B50300E1ED48 /* PopOverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0076064B1BF3B50300E1ED48 /* PopOverTableViewController.m */; };
+		007606501BF3C37500E1ED48 /* CalcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0076064F1BF3C37500E1ED48 /* CalcCell.m */; };
 		00FE188C1BF3B161004610D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE188B1BF3B161004610D9 /* main.m */; };
 		00FE188F1BF3B161004610D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 00FE188E1BF3B161004610D9 /* AppDelegate.m */; };
 		00FE18951BF3B161004610D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FE18931BF3B161004610D9 /* Main.storyboard */; };
@@ -19,6 +20,8 @@
 /* Begin PBXFileReference section */
 		0076064A1BF3B50300E1ED48 /* PopOverTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopOverTableViewController.h; sourceTree = "<group>"; };
 		0076064B1BF3B50300E1ED48 /* PopOverTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopOverTableViewController.m; sourceTree = "<group>"; };
+		0076064E1BF3C37500E1ED48 /* CalcCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcCell.h; sourceTree = "<group>"; };
+		0076064F1BF3C37500E1ED48 /* CalcCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcCell.m; sourceTree = "<group>"; };
 		00FE18871BF3B161004610D9 /* HIGH VOLTAGE REDUX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HIGH VOLTAGE REDUX.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		00FE188B1BF3B161004610D9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		00FE188D1BF3B161004610D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				0076064D1BF3B51100E1ED48 /* View Controllers */,
 				635091C71BF3B245009F5774 /* garbage */,
 				00FE188A1BF3B161004610D9 /* Supporting Files */,
+				0076064E1BF3C37500E1ED48 /* CalcCell.h */,
+				0076064F1BF3C37500E1ED48 /* CalcCell.m */,
 			);
 			path = "HIGH VOLTAGE REDUX";
 			sourceTree = "<group>";
@@ -173,6 +178,7 @@
 			files = (
 				635091C61BF3B237009F5774 /* HighVoltageTableViewController.m in Sources */,
 				0076064C1BF3B50300E1ED48 /* PopOverTableViewController.m in Sources */,
+				007606501BF3C37500E1ED48 /* CalcCell.m in Sources */,
 				00FE188F1BF3B161004610D9 /* AppDelegate.m in Sources */,
 				00FE188C1BF3B161004610D9 /* main.m in Sources */,
 			);
