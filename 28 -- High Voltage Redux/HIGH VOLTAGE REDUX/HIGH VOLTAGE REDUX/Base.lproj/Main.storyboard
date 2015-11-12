@@ -71,7 +71,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="VOLTS(V)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T4Y-oU-pkE">
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T4Y-oU-pkE">
                                             <rect key="frame" x="492" y="7" width="100" height="30"/>
                                             <animations/>
                                             <constraints>
@@ -123,7 +123,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="QNh-70-WNb">
-                        <barButtonItem key="leftBarButtonItem" title="Clear" id="Oo0-cY-DHK"/>
+                        <barButtonItem key="leftBarButtonItem" title="Clear" id="Oo0-cY-DHK">
+                            <connections>
+                                <action selector="clearButtonTapped:" destination="4vg-s2-ZXH" id="P9K-bc-r84"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="CP1-eR-99Y">
                             <connections>
                                 <segue destination="PAp-jo-wkF" kind="popoverPresentation" identifier="ShowPopoverSegue" popoverAnchorBarButtonItem="CP1-eR-99Y" id="ExU-y6-Hwv">
@@ -132,6 +136,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="addButton" destination="CP1-eR-99Y" id="Nkh-R5-bHZ"/>
+                        <outlet property="calculateButton" destination="kG7-f5-lUH" id="qDE-HI-5QI"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OYn-ON-aXE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -176,7 +184,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wuy-gL-bZa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2095" y="288"/>
+            <point key="canvasLocation" x="2016" y="288"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Cbf-PN-LuY">
@@ -195,7 +203,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yjL-fB-qJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="593" y="288"/>
+            <point key="canvasLocation" x="793" y="288"/>
         </scene>
     </scenes>
 </document>

@@ -15,6 +15,6 @@
 @end
 
 
-@interface HighVoltageTableViewController : UITableViewController <PopoverProtocol, UIPopoverPresentationControllerDelegate>
+@interface HighVoltageTableViewController : UITableViewController <PopoverProtocol, UIPopoverPresentationControllerDelegate, UITextFieldDelegate>
 
 @end

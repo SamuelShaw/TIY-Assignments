@@ -19,10 +19,10 @@
 @property NSArray *allItems;
 @property NSMutableArray *remainingItems;
 @property NSMutableArray *shownItems;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *addButton;
+@property (weak, nonatomic) IBOutlet UIButton *calculateButton;
 
 @end
-
-
 
 @implementation HighVoltageTableViewController
 
@@ -36,6 +36,9 @@
     self.allItems = @[@"AMPS", @"WATTS", @"VOLTS", @"OHMS"];
     self.remainingItems = [[NSMutableArray alloc] initWithArray:self.allItems];
     self.shownItems = [[NSMutableArray alloc] init];
+    
+    self.addButton.enabled = YES;
+    self.calculateButton.enabled = NO;
 }
 
 - (void)didReceiveMemoryWarning
@@ -69,10 +72,15 @@
         [self.remainingItems removeObject:chosenItem];
     }
     
-    //TODO add button 2 item check
+    if(self.shownItems.count == 2)
+    {
+        self.addButton.enabled = NO;
+        self.calculateButton.enabled = YES;
+    }
     
     [self.tableView reloadData];
 }
+
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CalcCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CalcCell" forIndexPath:indexPath];
@@ -80,7 +88,28 @@
     NSString *item = self.shownItems[indexPath.row];
     cell.elecLabel.text = item;
     
+    if([cell.elecTextField.text isEqualToString:@""])
+    {
+        [cell.elecTextField becomeFirstResponder];
+    }
+    
     return cell;
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    BOOL rc = NO;
+    if([textField.text isEqualToString:@""])
+    {
+        rc = YES;
+    }
+    
+    if(self.shownItems.count == 2)
+    {
+        [self calculate];
+    }
+    
+    return rc;
 }
 
 #pragma mark - Navigation
@@ -110,10 +139,33 @@
 {
     return UIModalPresentationNone;
 }
+
+#pragma mark - Action Handlers
+
 - (IBAction)calculateButtonTapped:(UIButton *)sender
 {
     [self calculate];
 }
+
+- (IBAction)clearButtonTapped:(UIButton *)sender
+{
+    [self.remainingItems addObjectsFromArray:self.allItems];
+    [self.shownItems removeAllObjects];
+    
+    NSArray *visibleCells = self.tableView.visibleCells;
+    
+    for (CalcCell *cell in visibleCells)
+    {
+        cell.elecTextField.text = @"";
+    }
+    
+    self.addButton.enabled = YES;
+    self.calculateButton.enabled = NO;
+    
+    [self.tableView reloadData];
+}
+
+#pragma mark - private
 
 - (void)calculate
 {
@@ -126,9 +178,7 @@
         NSString *cellLabel = cell.elecLabel.text;
         NSString *cellTextfield = cell.elecTextField.text;
         
-        [self checkCellLabel:cellLabel textfield:cellTextfield];
-        
-        [brain calculate];
+        [self checkCellLabelAndSetValues:cellLabel textfield:cellTextfield];
     }
     
     for (NSString *item in self.allItems)
@@ -139,36 +189,44 @@
         }
     }
     
+    [brain calculate];
+    
     [self.tableView reloadData];
     
     [self populateCellsWithAnswers];
+    [self.remainingItems removeAllObjects];
 
+//    [brain reset];
+    brain = nil;
+    
     [self.tableView reloadData];
 }
 
-- (BOOL)checkCellLabel:(NSString *) label textfield:(NSString *)textfield
+- (BOOL)checkCellLabelAndSetValues:(NSString *) label textfield:(NSString *)textfield
 {
-    if([label isEqualToString:@"WATTS"])
+    if([textfield doubleValue] > 0)
     {
-        double watts = [textfield doubleValue];
-        brain.watts = watts;
+        if([label isEqualToString:@"WATTS"])
+        {
+            double watts = [textfield doubleValue];
+            brain.watts = watts;
+        }
+        else if([label isEqualToString:@"VOLTS"])
+        {
+            double volts = [textfield doubleValue];
+            brain.volts = volts;
+        }
+        else if([label isEqualToString:@"AMPS"])
+        {
+            double amps = [textfield doubleValue];
+            brain.amps = amps;
+        }
+        else if([label isEqualToString:@"OHMS"])
+        {
+            double ohms = [textfield doubleValue];
+            brain.ohms = ohms;
+        }
     }
-    else if([label isEqualToString:@"VOLTS"])
-    {
-        double volts = [textfield doubleValue];
-        brain.volts = volts;
-    }
-    else if([label isEqualToString:@"AMPS"])
-    {
-        double amps = [textfield doubleValue];
-        brain.amps = amps;
-    }
-    else if([label isEqualToString:@"OHMS"])
-    {
-        double ohms = [textfield doubleValue];
-        brain.ohms = ohms;
-    }
-
     return YES;
 }
 
@@ -179,28 +237,40 @@
     {
         if([cell.elecLabel.text isEqualToString:@"OHMS"])
         {
-            NSString *ohmStr = [NSString stringWithFormat: @"%f", brain.ohms];
+            NSString *ohmStr = [self formatAnswer:brain.ohms];
             cell.elecTextField.text = ohmStr;
         }
         
         if([cell.elecLabel.text isEqualToString:@"VOLTS"])
         {
-            NSString *voltStr = [NSString stringWithFormat: @"%f", brain.volts];
+            NSString *voltStr = [self formatAnswer:brain.volts];
             cell.elecTextField.text = voltStr;
         }
         
         if([cell.elecLabel.text isEqualToString:@"AMPS"])
         {
-            NSString *ampStr = [NSString stringWithFormat: @"%f", brain.amps];
+            NSString *ampStr = [self formatAnswer:brain.amps];
             cell.elecTextField.text = ampStr;
         }
         
         if([cell.elecLabel.text isEqualToString:@"WATTS"])
         {
-            NSString *wattStr = [NSString stringWithFormat: @"%f", brain.watts];
+            NSString *wattStr = [self formatAnswer:brain.watts];
             cell.elecTextField.text = wattStr;
         }
     }
+}
+
+- (NSString *)formatAnswer:(double)answerToFormat
+{
+    NSString *ansStr = [NSString stringWithFormat:@"%f", answerToFormat];
+    NSArray *ansArr = [ansStr componentsSeparatedByString:@"."];
+    if([ansArr[1] doubleValue] == 0)
+    {
+        ansStr = ansArr[0];
+    }
+    
+    return ansStr;
 }
 
 @end
