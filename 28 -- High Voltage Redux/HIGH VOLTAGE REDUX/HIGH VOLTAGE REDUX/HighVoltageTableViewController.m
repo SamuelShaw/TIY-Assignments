@@ -59,29 +59,6 @@
     return self.shownItems.count;
 }
 
-- (void)itemWasChosen:(NSString *)chosenItem;
-{
-    NSLog(@"Hello ITEM was chosen!!");
-    
-    [self.shownItems addObject:chosenItem];
-    
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
-    
-    if([self.remainingItems containsObject:chosenItem])
-    {
-        [self.remainingItems removeObject:chosenItem];
-    }
-    
-    if(self.shownItems.count == 2)
-    {
-        self.addButton.enabled = NO;
-        self.calculateButton.enabled = YES;
-    }
-    
-    [self.tableView reloadData];
-}
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     CalcCell *cell = [tableView dequeueReusableCellWithIdentifier:@"CalcCell" forIndexPath:indexPath];
     
@@ -114,7 +91,6 @@
 
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if([segue.identifier isEqualToString:@"ShowPopoverSegue"])
@@ -165,6 +141,28 @@
     [self.tableView reloadData];
 }
 
+#pragma mark - item chosen from popover functon
+
+- (void)itemWasChosen:(NSString *)chosenItem;
+{
+    [self.shownItems addObject:chosenItem];
+    
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    
+    if([self.remainingItems containsObject:chosenItem])
+    {
+        [self.remainingItems removeObject:chosenItem];
+    }
+    
+    if(self.shownItems.count == 2)
+    {
+        self.addButton.enabled = NO;
+        self.calculateButton.enabled = YES;
+    }
+    
+    [self.tableView reloadData];
+}
+
 #pragma mark - private
 
 - (void)calculate
@@ -195,11 +193,10 @@
     
     [self populateCellsWithAnswers];
     [self.remainingItems removeAllObjects];
-
-//    [brain reset];
-    brain = nil;
     
     [self.tableView reloadData];
+    
+    [self spookyScarySkeleton];
 }
 
 - (BOOL)checkCellLabelAndSetValues:(NSString *) label textfield:(NSString *)textfield
@@ -271,6 +268,11 @@
     }
     
     return ansStr;
+}
+
+- (void)spookyScarySkeleton
+{
+    NSLog(@" \n ▒▒▒░░░░░░░░░░▄▐░░░░ \n ▒░░░░░░▄▄▄░░▄██▄░░░ \n ░░░░░░▐▀█▀▌░░░░▀█▄░ \n ░░░░░░▐█▄█▌░░░░░░▀█▄ \n ░░░░░░░▀▄▀░░░▄▄▄▄▄▀▀ \n ░░░░░▄▄▄██▀▀▀▀░░░░░ \n ░░░░█▀▄▄▄█░▀▀░░░░░░ \n ░░░░▌░▄▄▄▐▌▀▀▀░░░░░ \n ░░░░▌░▄▄▄▐▌▀▀▀░░░░░ \n ░▄░▐░░░▄▄░█░▀▀░░░░░ \n ░▀█▌░░░▄░▀█▀░▀░░░░░ \n ░░░░░░░░▄▄▐▌▄▄░░░░░ \n ░░░░░░░░▀███▀█░▄░░░ \n ░░░░░░░▐▌▀▄▀▄▀▐▄░░░ \n ░░░░░░░▐▀░░░░░░▐▌░░ \n ░░░░░░░█░░░░░░░░█░░ \n ░░░░░░▐▌░░░░░░░░░█░  ");
 }
 
 @end
