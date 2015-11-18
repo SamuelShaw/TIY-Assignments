@@ -21,7 +21,7 @@ class ProfileCollectionViewController: UICollectionViewController {
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
-        // Register cell classes
+//         Register cell classes
         self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
@@ -52,13 +52,15 @@ class ProfileCollectionViewController: UICollectionViewController {
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 500 * 500
+        return 2000 * 2000
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier(reuseIdentifier, forIndexPath: indexPath)
-    
-        cell.backgroundColor = UIColor(red:CGFloat(arc4random_uniform(255))/255.0, green:CGFloat(arc4random_uniform(255))/255.0, blue:CGFloat(arc4random_uniform(255))/255.0, alpha: 1)
+        
+//       LogoCollectionViewCell
+
+       cell.backgroundColor = UIColor(red:CGFloat(arc4random_uniform(255))/255.0, green:CGFloat(arc4random_uniform(255))/255.0, blue:CGFloat(arc4random_uniform(255))/255.0, alpha: 1)
         
         return cell
     }
