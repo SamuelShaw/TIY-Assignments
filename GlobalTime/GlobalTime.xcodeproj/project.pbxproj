@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00C36B141BFC21CF0021D707 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C36B131BFC21CF0021D707 /* ClockView.swift */; };
+		000844F01BFD2052001E0C39 /* SDEFlowLayoutWithAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000844EE1BFD2052001E0C39 /* SDEFlowLayoutWithAnimation.swift */; };
+		000844F11BFD2052001E0C39 /* UIViewRefactorAndDestructExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000844EF1BFD2052001E0C39 /* UIViewRefactorAndDestructExtension.swift */; };
 		00C36B391BFC34340021D707 /* LogoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C36B381BFC34340021D707 /* LogoCollectionViewCell.swift */; };
 		00C5D8021BFB905700467C3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00C5D8011BFB905700467C3F /* AppDelegate.swift */; };
 		00C5D8071BFB905700467C3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00C5D8051BFB905700467C3F /* Main.storyboard */; };
@@ -17,7 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		00C36B131BFC21CF0021D707 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		000844EE1BFD2052001E0C39 /* SDEFlowLayoutWithAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDEFlowLayoutWithAnimation.swift; sourceTree = "<group>"; };
+		000844EF1BFD2052001E0C39 /* UIViewRefactorAndDestructExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewRefactorAndDestructExtension.swift; sourceTree = "<group>"; };
 		00C36B381BFC34340021D707 /* LogoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoCollectionViewCell.swift; sourceTree = "<group>"; };
 		00C5D7FE1BFB905700467C3F /* GlobalTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00C5D8011BFB905700467C3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -67,8 +69,9 @@
 			children = (
 				00C5D8011BFB905700467C3F /* AppDelegate.swift */,
 				00C5D81F1BFBF60400467C3F /* ProfileCollectionViewController.swift */,
-				00C36B131BFC21CF0021D707 /* ClockView.swift */,
 				00C36B381BFC34340021D707 /* LogoCollectionViewCell.swift */,
+				000844EE1BFD2052001E0C39 /* SDEFlowLayoutWithAnimation.swift */,
+				000844EF1BFD2052001E0C39 /* UIViewRefactorAndDestructExtension.swift */,
 				00C5D8051BFB905700467C3F /* Main.storyboard */,
 				00C5D8081BFB905800467C3F /* Assets.xcassets */,
 				00C5D80A1BFB905800467C3F /* LaunchScreen.storyboard */,
@@ -151,9 +154,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				00C5D8201BFBF60400467C3F /* ProfileCollectionViewController.swift in Sources */,
-				00C36B141BFC21CF0021D707 /* ClockView.swift in Sources */,
 				00C5D8021BFB905700467C3F /* AppDelegate.swift in Sources */,
+				000844F01BFD2052001E0C39 /* SDEFlowLayoutWithAnimation.swift in Sources */,
 				00C36B391BFC34340021D707 /* LogoCollectionViewCell.swift in Sources */,
+				000844F11BFD2052001E0C39 /* UIViewRefactorAndDestructExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

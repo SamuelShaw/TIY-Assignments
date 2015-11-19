@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--Profile Collection View Controller-->
+        <!--SDEFlowLayoutWithAnimation-->
         <scene sceneID="t6u-xP-eQN">
             <objects>
-                <collectionViewController id="Q4F-Ym-jTR" customClass="ProfileCollectionViewController" customModule="GlobalTime" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController title="SDEFlowLayoutWithAnimation" id="Q4F-Ym-jTR" customClass="ProfileCollectionViewController" customModule="GlobalTime" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="bp4-Oo-vEl">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

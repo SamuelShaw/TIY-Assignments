@@ -12,20 +12,95 @@ private let reuseIdentifier = "Cell"
 
 class ProfileCollectionViewController: UICollectionViewController {
 
+    var animationLayout: SDEFlowLayoutWithAnimation?
+     var sectionCount = 3
+    var itemCountInSection: [Int] = [8, 8, 8,]
+
     
-//    var profiles = ["Sam", "Ben", "Tom", "Jan"]
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-//         Register cell classes
-        self.collectionView!.registerClass(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+        
+collectionView?.backgroundColor = UIColor.whiteColor()
+        animationLayout = SDEFlowLayoutWithAnimation()
+        animationLayout?.itemSize = CGSize(width: 60, height: 60)
+        animationLayout?.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10)
+        self.collectionView?.collectionViewLayout = animationLayout!
+        
+        
+        //         Register cell classes
 
         // Do any additional setup after loading the view.
+        let insertItem = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "insertItem")
+        let deleteItem = UIBarButtonItem(barButtonSystemItem: .Trash, target: self, action: "deleteItem")
+        let moveItem = UIBarButtonItem(title: "Move", style: .Plain, target: self, action: "moveItem")
+        self.navigationItem.rightBarButtonItems = [moveItem, deleteItem, insertItem]
+
     }
+    
+    func insertItem()
+    {
+        let randomSection = Int(arc4random_uniform(UInt32(sectionCount)))
+        let previousCount = itemCountInSection[randomSection]
+        itemCountInSection[randomSection] = previousCount + 1
+        let randomItem = Int(arc4random_uniform(UInt32(previousCount)))
+        self.collectionView?.insertItemsAtIndexPaths([NSIndexPath(forItem: randomItem, inSection: randomSection)])
+    }
+    
+    func deleteItem()
+    {
+        let randomSection = Int(arc4random_uniform(UInt32(sectionCount)))
+        let previousCount = itemCountInSection[randomSection]
+        if previousCount > 0
+        {
+            let randomItem = Int(arc4random_uniform(UInt32(previousCount)))
+            let deletedIndexPath = NSIndexPath(forItem: randomItem, inSection: randomSection)
+            let visibleIndexPaths = self.collectionView?.indexPathsForVisibleItems()
+            let filteredIndexPaths = visibleIndexPaths?.filter({
+                indexPath in
+                return indexPath.section == deletedIndexPath.section && indexPath.item == deletedIndexPath.item
+            })
+            
+            self.itemCountInSection[randomSection] = previousCount - 1
+            if filteredIndexPaths?.count > 0
+            {
+                let deletedCell = self.collectionView?.cellForItemAtIndexPath(deletedIndexPath)
+                let animationTime: NSTimeInterval = 0.5
+                deletedCell?.destructWithTime(animationTime)
+                self.collectionView?.performSelector("deleteItemsAtIndexPaths:", withObject: [deletedIndexPath], afterDelay: animationTime)
+            }
+            else
+            {
+                self.collectionView?.deleteItemsAtIndexPaths([deletedIndexPath])
+            }
+        }
+    }
+    
+    
+    func moveItem(){
+        let randomSection = Int(arc4random_uniform(UInt32(sectionCount)))
+        let itemCount = itemCountInSection[randomSection]
+        if itemCount > 2{
+            let fromItem = Int(arc4random_uniform(UInt32(itemCount)))
+            var toItem = Int(arc4random_uniform(UInt32(itemCount)))
+            while fromItem == toItem{
+                toItem = Int(arc4random_uniform(UInt32(itemCount)))
+            }
+            
+            let fromIndexPath = NSIndexPath(forItem: fromItem, inSection: randomSection)
+            let toIndexPath = NSIndexPath(forItem: toItem, inSection: randomSection)
+            
+            self.collectionView?.moveItemAtIndexPath(fromIndexPath, toIndexPath: toIndexPath)
+        }else{
+            print("NOT ENOUGH ITEMS, TRY AGAIN")
+        }
+    }
+
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -46,13 +121,14 @@ class ProfileCollectionViewController: UICollectionViewController {
 
     override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return sectionCount
+        
     }
 
 
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 2000 * 2000
+        return itemCountInSection[section]
     }
 
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
@@ -68,10 +144,21 @@ class ProfileCollectionViewController: UICollectionViewController {
     // MARK: UICollectionViewDelegate
     
     
-    override func collectionView(collectionView: UICollectionView, didDeselectItemAtIndexPath indexPath: NSIndexPath)
+    override func collectionView(collectionView: UICollectionView, willDisplayCell cell: UICollectionViewCell, forItemAtIndexPath indexPath: NSIndexPath)
     {
-        print("Did slect path at index row \(indexPath.row)")
+        if animationLayout != nil
+        {
+            let filteredItems = animationLayout!.insertedItemsToAnimate.filter({
+                element in
+                return element.section == indexPath.section && element.item == indexPath.item
+            })
+            if filteredItems.count > 0
+            {
+                cell.refactor()
+            }
+        }
     }
+    
 
     /*
     // Uncomment this method to specify if the specified item should be highlighted during tracking
