@@ -1,5 +1,5 @@
 //
-//  FavoritesTableViewController.swift
+//  ResultsTableViewController.swift
 //  VenueMenu
 //
 //  Created by Samuel Shaw on 11/24/15.
@@ -8,13 +8,8 @@
 
 import UIKit
 
-class FavoritesTableViewController: UITableViewController
-{
+class ResultsTableViewController: UITableViewController {
 
-    @IBOutlet weak var nameLabel: UILabel!
-    
-    var FaveVenues = [Venue]()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -34,24 +29,23 @@ class FavoritesTableViewController: UITableViewController
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 1
+        return 0
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return FaveVenues.count
+        return 0
     }
 
-    
+    /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("VenueNameCell", forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
 
-        
-        cell.textLabel?.text = Venue
+        // Configure the cell...
 
         return cell
     }
-    
+    */
 
     /*
     // Override to support conditional editing of the table view.

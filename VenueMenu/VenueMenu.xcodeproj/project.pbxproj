@@ -7,23 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		005A8DDA1C0B471D00F39668 /* APIBrainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A8DD91C0B471D00F39668 /* APIBrainer.swift */; };
+		005A8DDC1C0B48AF00F39668 /* VenueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A8DDB1C0B48AF00F39668 /* VenueTableViewCell.swift */; };
+		005A8DDE1C0B499800F39668 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 005A8DDD1C0B499800F39668 /* Info.plist */; };
+		005A8DE01C0B4B0700F39668 /* Venue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A8DDF1C0B4B0700F39668 /* Venue.swift */; };
+		005A8DE21C0B4B5B00F39668 /* FoursquarePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A8DE11C0B4B5B00F39668 /* FoursquarePhoto.swift */; };
+		005A8DE41C0B4CBF00F39668 /* FourSquareApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A8DE31C0B4CBF00F39668 /* FourSquareApi.swift */; };
+		005A8DE61C0B4D1000F39668 /* HTTPString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005A8DE51C0B4D1000F39668 /* HTTPString.swift */; };
+		005A8DE81C0B4E3600F39668 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005A8DE71C0B4E3600F39668 /* MapKit.framework */; };
+		005A8DEA1C0B4E4100F39668 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 005A8DE91C0B4E4100F39668 /* CoreLocation.framework */; };
 		0061D2121C05381900226DBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0061D2111C05381900226DBC /* AppDelegate.swift */; };
 		0061D2171C05381900226DBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0061D2151C05381900226DBC /* Main.storyboard */; };
 		0061D21A1C05381900226DBC /* VenueMenu.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0061D2181C05381900226DBC /* VenueMenu.xcdatamodeld */; };
 		0061D21C1C05381900226DBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0061D21B1C05381900226DBC /* Assets.xcassets */; };
 		0061D21F1C05381900226DBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0061D21D1C05381900226DBC /* LaunchScreen.storyboard */; };
 		0061D2271C05388300226DBC /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0061D2261C05388300226DBC /* FavoritesTableViewController.swift */; };
+		0061D2291C05410B00226DBC /* ResultsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0061D2281C05410B00226DBC /* ResultsTableViewController.swift */; };
+		0061D22B1C05413A00226DBC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0061D22A1C05413A00226DBC /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		005A8DD91C0B471D00F39668 /* APIBrainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIBrainer.swift; sourceTree = "<group>"; };
+		005A8DDB1C0B48AF00F39668 /* VenueTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VenueTableViewCell.swift; sourceTree = "<group>"; };
+		005A8DDD1C0B499800F39668 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		005A8DDF1C0B4B0700F39668 /* Venue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Venue.swift; sourceTree = "<group>"; };
+		005A8DE11C0B4B5B00F39668 /* FoursquarePhoto.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoursquarePhoto.swift; sourceTree = "<group>"; };
+		005A8DE31C0B4CBF00F39668 /* FourSquareApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourSquareApi.swift; sourceTree = "<group>"; };
+		005A8DE51C0B4D1000F39668 /* HTTPString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPString.swift; sourceTree = "<group>"; };
+		005A8DE71C0B4E3600F39668 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		005A8DE91C0B4E4100F39668 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		0061D20E1C05381900226DBC /* VenueMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VenueMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0061D2111C05381900226DBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0061D2161C05381900226DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0061D2191C05381900226DBC /* VenueMenu.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = VenueMenu.xcdatamodel; sourceTree = "<group>"; };
 		0061D21B1C05381900226DBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0061D21E1C05381900226DBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0061D2201C05381900226DBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0061D2261C05388300226DBC /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		0061D2281C05410B00226DBC /* ResultsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsTableViewController.swift; sourceTree = "<group>"; };
+		0061D22A1C05413A00226DBC /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +52,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005A8DEA1C0B4E4100F39668 /* CoreLocation.framework in Frameworks */,
+				005A8DE81C0B4E3600F39668 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +63,8 @@
 		0061D2051C05381900226DBC = {
 			isa = PBXGroup;
 			children = (
+				005A8DE91C0B4E4100F39668 /* CoreLocation.framework */,
+				005A8DE71C0B4E3600F39668 /* MapKit.framework */,
 				0061D2101C05381900226DBC /* VenueMenu */,
 				0061D20F1C05381900226DBC /* Products */,
 			);
@@ -58,10 +83,18 @@
 			children = (
 				0061D2111C05381900226DBC /* AppDelegate.swift */,
 				0061D2261C05388300226DBC /* FavoritesTableViewController.swift */,
+				0061D2281C05410B00226DBC /* ResultsTableViewController.swift */,
+				0061D22A1C05413A00226DBC /* DetailViewController.swift */,
+				005A8DD91C0B471D00F39668 /* APIBrainer.swift */,
+				005A8DDB1C0B48AF00F39668 /* VenueTableViewCell.swift */,
+				005A8DDF1C0B4B0700F39668 /* Venue.swift */,
+				005A8DE11C0B4B5B00F39668 /* FoursquarePhoto.swift */,
+				005A8DE31C0B4CBF00F39668 /* FourSquareApi.swift */,
+				005A8DE51C0B4D1000F39668 /* HTTPString.swift */,
 				0061D2151C05381900226DBC /* Main.storyboard */,
 				0061D21B1C05381900226DBC /* Assets.xcassets */,
 				0061D21D1C05381900226DBC /* LaunchScreen.storyboard */,
-				0061D2201C05381900226DBC /* Info.plist */,
+				005A8DDD1C0B499800F39668 /* Info.plist */,
 				0061D2181C05381900226DBC /* VenueMenu.xcdatamodeld */,
 			);
 			path = VenueMenu;
@@ -126,6 +159,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005A8DDE1C0B499800F39668 /* Info.plist in Resources */,
 				0061D21F1C05381900226DBC /* LaunchScreen.storyboard in Resources */,
 				0061D21C1C05381900226DBC /* Assets.xcassets in Resources */,
 				0061D2171C05381900226DBC /* Main.storyboard in Resources */,
@@ -139,8 +173,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005A8DDC1C0B48AF00F39668 /* VenueTableViewCell.swift in Sources */,
+				005A8DE21C0B4B5B00F39668 /* FoursquarePhoto.swift in Sources */,
+				005A8DE01C0B4B0700F39668 /* Venue.swift in Sources */,
+				0061D2291C05410B00226DBC /* ResultsTableViewController.swift in Sources */,
 				0061D2271C05388300226DBC /* FavoritesTableViewController.swift in Sources */,
+				005A8DE61C0B4D1000F39668 /* HTTPString.swift in Sources */,
+				0061D22B1C05413A00226DBC /* DetailViewController.swift in Sources */,
 				0061D21A1C05381900226DBC /* VenueMenu.xcdatamodeld in Sources */,
+				005A8DE41C0B4CBF00F39668 /* FourSquareApi.swift in Sources */,
+				005A8DDA1C0B471D00F39668 /* APIBrainer.swift in Sources */,
 				0061D2121C05381900226DBC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +333,7 @@
 				0061D2251C05381900226DBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
