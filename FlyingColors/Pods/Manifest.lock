@@ -1,0 +1,13 @@
+PODS:
+  - AMScrollingNavbar (2.0.9)
+  - HxColor (2.0.0)
+
+DEPENDENCIES:
+  - AMScrollingNavbar (~> 2.0.1)
+  - HxColor (~> 2.0)
+
+SPEC CHECKSUMS:
+  AMScrollingNavbar: 6ee57388f84b8f33f31a7944abf51b9afa16bafd
+  HxColor: dbf82e4363eaef1314f683514e8bb2716a00554d
+
+COCOAPODS: 0.39.0
