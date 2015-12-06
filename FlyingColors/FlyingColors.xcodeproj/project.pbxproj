@@ -37,13 +37,13 @@
 		005F42261C1495DA0065F693 /* o6axPKQ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 005F42251C1495DA0065F693 /* o6axPKQ.jpg */; };
 		005F42291C1496050065F693 /* d71ddde27f5be654e3b1b4ff5ad72c8a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 005F42271C1496050065F693 /* d71ddde27f5be654e3b1b4ff5ad72c8a.jpg */; };
 		005F422A1C1496050065F693 /* superthumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 005F42281C1496050065F693 /* superthumb.jpg */; };
-		005F422C1C1497230065F693 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F422B1C1497230065F693 /* SignInViewController.swift */; };
 		005F422F1C14A2D00065F693 /* mcol_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F422E1C14A2D00065F693 /* mcol_frame.png */; };
 		006958431C135398001517B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006958421C135398001517B6 /* AppDelegate.swift */; };
 		006958451C135398001517B6 /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006958441C135398001517B6 /* ColorsViewController.swift */; };
 		006958481C135398001517B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006958461C135398001517B6 /* Main.storyboard */; };
 		0069584A1C135398001517B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 006958491C135398001517B6 /* Assets.xcassets */; };
 		0069584D1C135398001517B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0069584B1C135398001517B6 /* LaunchScreen.storyboard */; };
+		007218341C14B28A0016F363 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007218331C14B28A0016F363 /* SignInViewController.swift */; };
 		317AE75FD87030515C562FDD /* Pods_FlyingColors.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7CD530B31C04C76DA5E14D /* Pods_FlyingColors.framework */; };
 /* End PBXBuildFile section */
 
@@ -78,7 +78,6 @@
 		005F42251C1495DA0065F693 /* o6axPKQ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = o6axPKQ.jpg; sourceTree = "<group>"; };
 		005F42271C1496050065F693 /* d71ddde27f5be654e3b1b4ff5ad72c8a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d71ddde27f5be654e3b1b4ff5ad72c8a.jpg; sourceTree = "<group>"; };
 		005F42281C1496050065F693 /* superthumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = superthumb.jpg; sourceTree = "<group>"; };
-		005F422B1C1497230065F693 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		005F422E1C14A2D00065F693 /* mcol_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mcol_frame.png; sourceTree = "<group>"; };
 		0069583F1C135397001517B6 /* FlyingColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyingColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		006958421C135398001517B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +86,7 @@
 		006958491C135398001517B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0069584C1C135398001517B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0069584E1C135398001517B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		007218331C14B28A0016F363 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		3F7CD530B31C04C76DA5E14D /* Pods_FlyingColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlyingColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		49CB32CB088DC177B03878C9 /* Pods-FlyingColors.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyingColors.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlyingColors/Pods-FlyingColors.release.xcconfig"; sourceTree = "<group>"; };
 		B30886A3A84F97A68D983C4B /* Pods-FlyingColors.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlyingColors.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlyingColors/Pods-FlyingColors.debug.xcconfig"; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 				001AE3D91C1359FB0024E149 /* ColorScreenViewController.swift */,
 				003C2B9C1C137619003876D1 /* AdvColorsViewController.swift */,
 				003C2B9E1C138063003876D1 /* AdvColorScreenViewController.swift */,
-				005F422B1C1497230065F693 /* SignInViewController.swift */,
+				007218331C14B28A0016F363 /* SignInViewController.swift */,
 				006958461C135398001517B6 /* Main.storyboard */,
 				006958491C135398001517B6 /* Assets.xcassets */,
 				0069584B1C135398001517B6 /* LaunchScreen.storyboard */,
@@ -359,7 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				005F422C1C1497230065F693 /* SignInViewController.swift in Sources */,
+				007218341C14B28A0016F363 /* SignInViewController.swift in Sources */,
 				006958451C135398001517B6 /* ColorsViewController.swift in Sources */,
 				001AE3DC1C136DD30024E149 /* NavigationController.swift in Sources */,
 				003C2B9D1C137619003876D1 /* AdvColorsViewController.swift in Sources */,

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="aKf-8l-teV">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9so-QN-u3G">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
@@ -61,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1925" y="-360"/>
+            <point key="canvasLocation" x="2737" y="-360"/>
         </scene>
         <!--Advanced Colors!-->
         <scene sceneID="3ff-xd-RTT">
@@ -159,7 +159,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mfj-CF-39o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2588" y="-360"/>
+            <point key="canvasLocation" x="3400" y="-360"/>
         </scene>
         <!--Adv Color Screen View Controller-->
         <scene sceneID="N59-Pk-4i9">
@@ -177,7 +177,7 @@
                                 <rect key="frame" x="20" y="232" width="560" height="136"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="85"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="koX-h5-li7">
@@ -230,7 +230,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bDb-Jt-wSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1243" y="-360"/>
+            <point key="canvasLocation" x="2055" y="-360"/>
         </scene>
         <!--Sign In View Controller-->
         <scene sceneID="SFS-Mt-Z6x">
@@ -244,7 +244,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="d71ddde27f5be654e3b1b4ff5ad72c8a.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HLT-hC-d3p">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="d71ddde27f5be654e3b1b4ff5ad72c8a.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="HLT-hC-d3p">
                                 <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                                 <animations/>
                             </imageView>
@@ -351,6 +351,9 @@
                                         <include reference="cOu-DM-UZj"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <action selector="twitterTapped:" destination="aKf-8l-teV" eventType="touchUpInside" id="0KK-9R-3kc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -431,10 +434,11 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="wGA-U4-5Y8"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a1x-6g-Akz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="555" y="-360"/>
+            <point key="canvasLocation" x="1314" y="-360"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="B6k-Ub-vPP">
@@ -454,6 +458,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7JH-KU-QFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="431" y="307"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WBT-3f-Rxc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9so-QN-u3G" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Di0-10-ZIM">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aKf-8l-teV" kind="relationship" relationship="rootViewController" id="qe3-Ta-eZa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zyv-S6-NPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="555" y="-360"/>
         </scene>
     </scenes>
     <resources>

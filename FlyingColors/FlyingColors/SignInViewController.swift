@@ -10,15 +10,17 @@ import UIKit
 import Parse
 import ParseTwitterUtils
 
-class SignInViewController: UIViewController
-{
-    
+class SignInViewController: UIViewController {
 
-    override func viewDidLoad()
-    {
+    override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
     
     @IBAction func twitterTapped(sender: AnyObject)
@@ -28,16 +30,24 @@ class SignInViewController: UIViewController
         PFTwitterUtils.logInWithBlock { (user:PFUser?, error:NSError?) -> Void in
             if user == nil
             {
-                print("He's dead Jim!")
+                print("not working")
             }
             else
             {
-                print("░░░░░░▄▄▄▄▄▓▓▓▄▄▄░░░░░ ░░░░▄▄▓▓▓▓▓▓▓▓▓▓▓▓▓▄░░░ ░░▄▄▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▀█▄░ ░▓▓▌▓▓▓░░▒▒▒▒▀(◐)▒▒▒▒▒█▓ ░▓▓▌▓▓░▒▒▓(◐)▓░░░▒▓▓(◐)█▓ ▓▓▌▓▓█▄█▀▄▄░▀░▀▄▄▀░░█░█ ▓▓▌▓▓▀▄█▄█░█▀▄▄▄▄▄▀██░█ ░▓▓▌▓▓░█░███▄█▄█▄███░░█ ░▓▓▌▓▓░█░███████████░░█ ░▓▓▌▓▓░█░███████████░░█ ░▓▓▌▓▓░█░███████████░░█ ░▓▓▌▓▓░▀▀█░█▀█▀█▀███░█ ░░▓▓▌▓▓░░░▀▀▄█▄█▄█▄▀░█ ░░▓▓▌▓▓▓▓▀▀▄▄▄▄▄▄▄▄▄▄▀")
-
+                print("it's working!")
             }
         }
     }
     
 
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+    }
+    */
 
 }
