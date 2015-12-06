@@ -1,13 +1,13 @@
 PODS:
-  - AMScrollingNavbar (2.0.9)
-  - HxColor (2.0.0)
+  - Bolts/Tasks (1.5.0)
+  - Parse (1.10.0):
+    - Bolts/Tasks (~> 1.5)
 
 DEPENDENCIES:
-  - AMScrollingNavbar (~> 2.0.1)
-  - HxColor (~> 2.0)
+  - Parse
 
 SPEC CHECKSUMS:
-  AMScrollingNavbar: 6ee57388f84b8f33f31a7944abf51b9afa16bafd
-  HxColor: dbf82e4363eaef1314f683514e8bb2716a00554d
+  Bolts: 722ab9a4f8b50fc4ed1b9998a5a7a2b3f16d80b4
+  Parse: 90b2544822200f84b18bfacc4e8b0a3a6c3584a2
 
 COCOAPODS: 0.39.0

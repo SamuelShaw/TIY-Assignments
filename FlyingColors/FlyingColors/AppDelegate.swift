@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Bolts
+import Parse
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +18,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+         Parse.enableLocalDatastore()
         
+        // Initialize Parse.
+        Parse.setApplicationId("ZV209pMDoGm5ER3fkkZsx50RORLL7n24bhtKq67a",
+            clientKey: "dvcilOQBEq6fiCW4EKbEQTXv0qgao4xqYBYcKmtJ")
+        
+        // [Optional] Track statistics around application opens.
+        PFAnalytics.trackAppOpenedWithLaunchOptions(launchOptions)
+        
+        
+        
+        
+        
+        // Nav Bar config
         let navBarLook = UINavigationBar.appearance()
         
         navBarLook.tintColor = UIColor.whiteColor()

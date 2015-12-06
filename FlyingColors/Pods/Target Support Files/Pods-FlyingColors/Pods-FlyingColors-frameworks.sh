@@ -84,10 +84,10 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-FlyingColors/AMScrollingNavbar.framework"
-  install_framework "Pods-FlyingColors/HxColor.framework"
+  install_framework "Pods-FlyingColors/Bolts.framework"
+  install_framework "Pods-FlyingColors/Parse.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-FlyingColors/AMScrollingNavbar.framework"
-  install_framework "Pods-FlyingColors/HxColor.framework"
+  install_framework "Pods-FlyingColors/Bolts.framework"
+  install_framework "Pods-FlyingColors/Parse.framework"
 fi

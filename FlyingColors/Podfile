@@ -4,7 +4,6 @@
  use_frameworks!
 
 target 'FlyingColors' do
-pod 'HxColor', '~> 2.0'
-pod 'AMScrollingNavbar', '~> 2.0.1'
+pod 'Parse'
 end
 

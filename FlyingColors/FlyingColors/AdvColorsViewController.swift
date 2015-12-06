@@ -7,20 +7,26 @@
 //
 
 import UIKit
+import Parse
 
 class AdvColorsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
 
     @IBOutlet weak var tableView: UITableView!
     
+//trying to do what i did in the color view controller except in this case i want to use the hex pod so i can add more colors other than the ones premade in xcode, but the pod usage is giving me trouble..
+    var advColors : [UIColor] = [UIColor(red: 229/255, green: 43/255, blue: 80/255, alpha: 1.0), //Amaranth
+                                UIColor(red: 255/255, green: 191/255, blue: 0/255, alpha: 1.0), //Amber
+                                UIColor(red: 153/255, green: 102/255, blue: 204/255, alpha: 1.0), //Amethyst
+                                UIColor(red: 251/255, green: 206/255, blue: 177/255, alpha: 1.0), //Apricot
+                                UIColor(red: 127/255, green: 255/255, blue: 112/255, alpha: 1.0), //Aquamarine
+                                UIColor(red: 0/255, green: 127/255, blue: 255/255, alpha: 1.0)] //Azure
+//                                UIColor(red: 137/255, green: 207/255, blue: 240/255, alpha: 1.0)] //Baby Blue
 
-    var advColors : [UIColor] = []
+
     
+
     
-//    var advColors : [UIColor] = [UIColor(red: 229, green: 43, blue: 80, alpha: 1),
-//                                UIColor(red: 255, green: 191, blue: 0, alpha: 1),
-//                                UIColor(red: 153, green: 102, blue: 204, alpha: 1),
-//                                UIColor(red: 251, green: 206, blue: 177, alpha: 1)]
     
     var selectedColor : UIColor?
     
@@ -32,6 +38,11 @@ class AdvColorsViewController: UIViewController, UITableViewDataSource, UITableV
         
         self.tableView.dataSource = self
         self.tableView.delegate = self
+    }
+    
+    override func viewWillAppear(animated: Bool)
+    {
+        self.tableView.reloadData()
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int

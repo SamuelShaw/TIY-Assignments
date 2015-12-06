@@ -4,11 +4,7 @@
    <FileRef
       location = "group:FlyingColors.xcodeproj">
    </FileRef>
-   <Group
-      location = "container:"
-      name = "Dem Pods">
-      <FileRef
-         location = "group:Pods/Pods.xcodeproj">
-      </FileRef>
-   </Group>
+   <FileRef
+      location = "group:/Users/samuelshaw/Documents/TIY-Assignments/FlyingColors/Pods/Dem Pods.xcodeproj">
+   </FileRef>
 </Workspace>

@@ -11,6 +11,34 @@
 		001AE3DC1C136DD30024E149 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 001AE3DB1C136DD30024E149 /* NavigationController.swift */; };
 		003C2B9D1C137619003876D1 /* AdvColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C2B9C1C137619003876D1 /* AdvColorsViewController.swift */; };
 		003C2B9F1C138063003876D1 /* AdvColorScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003C2B9E1C138063003876D1 /* AdvColorScreenViewController.swift */; };
+		003C2BA21C14842A003876D1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BA11C14842A003876D1 /* AudioToolbox.framework */; };
+		003C2BA41C148432003876D1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BA31C148432003876D1 /* CFNetwork.framework */; };
+		003C2BA61C14843B003876D1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BA51C14843B003876D1 /* CoreGraphics.framework */; };
+		003C2BA81C148442003876D1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BA71C148442003876D1 /* CoreLocation.framework */; };
+		003C2BAA1C14844A003876D1 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BA91C14844A003876D1 /* QuartzCore.framework */; };
+		003C2BAC1C148451003876D1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BAB1C148451003876D1 /* Security.framework */; };
+		003C2BAE1C148472003876D1 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BAD1C148472003876D1 /* StoreKit.framework */; };
+		003C2BB01C14847D003876D1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BAF1C14847D003876D1 /* SystemConfiguration.framework */; };
+		003C2BB21C14848A003876D1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BB11C14848A003876D1 /* libz.tbd */; };
+		003C2BB41C148498003876D1 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BB31C148498003876D1 /* libsqlite3.tbd */; };
+		003C2BB61C1484AA003876D1 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BB51C1484AA003876D1 /* Accounts.framework */; };
+		003C2BB81C1484B0003876D1 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BB71C1484B0003876D1 /* Social.framework */; };
+		003C2BBC1C1484FF003876D1 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BB91C1484FF003876D1 /* Bolts.framework */; };
+		003C2BBD1C148500003876D1 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BBA1C1484FF003876D1 /* Parse.framework */; };
+		003C2BBE1C148500003876D1 /* ParseTwitterUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 003C2BBB1C1484FF003876D1 /* ParseTwitterUtils.framework */; };
+		005F42161C148CA80065F693 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F42151C148CA80065F693 /* twitter.png */; };
+		005F42181C148DAF0065F693 /* continue_button.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F42171C148DAF0065F693 /* continue_button.png */; };
+		005F421A1C1490BD0065F693 /* girl-holding-giant-paint-brush.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F42191C1490BD0065F693 /* girl-holding-giant-paint-brush.png */; };
+		005F421C1C1490C80065F693 /* boy-holding-giant-paint-brush.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F421B1C1490C80065F693 /* boy-holding-giant-paint-brush.png */; };
+		005F421E1C1492A40065F693 /* speech_bubble_green.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F421D1C1492A40065F693 /* speech_bubble_green.png */; };
+		005F42221C1493900065F693 /* Chat_bubble.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F421F1C1493900065F693 /* Chat_bubble.png */; };
+		005F42231C1493900065F693 /* speech-bubbles-2-0green-hi.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F42201C1493900065F693 /* speech-bubbles-2-0green-hi.png */; };
+		005F42241C1493900065F693 /* speech-bubble-md.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F42211C1493900065F693 /* speech-bubble-md.png */; };
+		005F42261C1495DA0065F693 /* o6axPKQ.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 005F42251C1495DA0065F693 /* o6axPKQ.jpg */; };
+		005F42291C1496050065F693 /* d71ddde27f5be654e3b1b4ff5ad72c8a.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 005F42271C1496050065F693 /* d71ddde27f5be654e3b1b4ff5ad72c8a.jpg */; };
+		005F422A1C1496050065F693 /* superthumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 005F42281C1496050065F693 /* superthumb.jpg */; };
+		005F422C1C1497230065F693 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005F422B1C1497230065F693 /* SignInViewController.swift */; };
+		005F422F1C14A2D00065F693 /* mcol_frame.png in Resources */ = {isa = PBXBuildFile; fileRef = 005F422E1C14A2D00065F693 /* mcol_frame.png */; };
 		006958431C135398001517B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006958421C135398001517B6 /* AppDelegate.swift */; };
 		006958451C135398001517B6 /* ColorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006958441C135398001517B6 /* ColorsViewController.swift */; };
 		006958481C135398001517B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006958461C135398001517B6 /* Main.storyboard */; };
@@ -24,6 +52,34 @@
 		001AE3DB1C136DD30024E149 /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		003C2B9C1C137619003876D1 /* AdvColorsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvColorsViewController.swift; sourceTree = "<group>"; };
 		003C2B9E1C138063003876D1 /* AdvColorScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvColorScreenViewController.swift; sourceTree = "<group>"; };
+		003C2BA11C14842A003876D1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		003C2BA31C148432003876D1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		003C2BA51C14843B003876D1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		003C2BA71C148442003876D1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		003C2BA91C14844A003876D1 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		003C2BAB1C148451003876D1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		003C2BAD1C148472003876D1 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		003C2BAF1C14847D003876D1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		003C2BB11C14848A003876D1 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		003C2BB31C148498003876D1 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		003C2BB51C1484AA003876D1 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		003C2BB71C1484B0003876D1 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		003C2BB91C1484FF003876D1 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		003C2BBA1C1484FF003876D1 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		003C2BBB1C1484FF003876D1 /* ParseTwitterUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseTwitterUtils.framework; sourceTree = "<group>"; };
+		005F42151C148CA80065F693 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		005F42171C148DAF0065F693 /* continue_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = continue_button.png; sourceTree = "<group>"; };
+		005F42191C1490BD0065F693 /* girl-holding-giant-paint-brush.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "girl-holding-giant-paint-brush.png"; sourceTree = "<group>"; };
+		005F421B1C1490C80065F693 /* boy-holding-giant-paint-brush.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "boy-holding-giant-paint-brush.png"; sourceTree = "<group>"; };
+		005F421D1C1492A40065F693 /* speech_bubble_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speech_bubble_green.png; sourceTree = "<group>"; };
+		005F421F1C1493900065F693 /* Chat_bubble.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chat_bubble.png; sourceTree = "<group>"; };
+		005F42201C1493900065F693 /* speech-bubbles-2-0green-hi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubbles-2-0green-hi.png"; sourceTree = "<group>"; };
+		005F42211C1493900065F693 /* speech-bubble-md.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "speech-bubble-md.png"; sourceTree = "<group>"; };
+		005F42251C1495DA0065F693 /* o6axPKQ.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = o6axPKQ.jpg; sourceTree = "<group>"; };
+		005F42271C1496050065F693 /* d71ddde27f5be654e3b1b4ff5ad72c8a.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = d71ddde27f5be654e3b1b4ff5ad72c8a.jpg; sourceTree = "<group>"; };
+		005F42281C1496050065F693 /* superthumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = superthumb.jpg; sourceTree = "<group>"; };
+		005F422B1C1497230065F693 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		005F422E1C14A2D00065F693 /* mcol_frame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mcol_frame.png; sourceTree = "<group>"; };
 		0069583F1C135397001517B6 /* FlyingColors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlyingColors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		006958421C135398001517B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		006958441C135398001517B6 /* ColorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +97,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003C2BB81C1484B0003876D1 /* Social.framework in Frameworks */,
+				003C2BB61C1484AA003876D1 /* Accounts.framework in Frameworks */,
+				003C2BB41C148498003876D1 /* libsqlite3.tbd in Frameworks */,
+				003C2BB21C14848A003876D1 /* libz.tbd in Frameworks */,
+				003C2BBD1C148500003876D1 /* Parse.framework in Frameworks */,
+				003C2BB01C14847D003876D1 /* SystemConfiguration.framework in Frameworks */,
+				003C2BBE1C148500003876D1 /* ParseTwitterUtils.framework in Frameworks */,
+				003C2BAE1C148472003876D1 /* StoreKit.framework in Frameworks */,
+				003C2BAC1C148451003876D1 /* Security.framework in Frameworks */,
+				003C2BAA1C14844A003876D1 /* QuartzCore.framework in Frameworks */,
+				003C2BA81C148442003876D1 /* CoreLocation.framework in Frameworks */,
+				003C2BA61C14843B003876D1 /* CoreGraphics.framework in Frameworks */,
+				003C2BA41C148432003876D1 /* CFNetwork.framework in Frameworks */,
+				003C2BA21C14842A003876D1 /* AudioToolbox.framework in Frameworks */,
 				317AE75FD87030515C562FDD /* Pods_FlyingColors.framework in Frameworks */,
+				003C2BBC1C1484FF003876D1 /* Bolts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +127,48 @@
 				B7D88A4420519E79992F55FA /* Frameworks */,
 			);
 			name = "Extra Cocoa Please";
+			sourceTree = "<group>";
+		};
+		003C2BBF1C148516003876D1 /* Dem Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				003C2BB91C1484FF003876D1 /* Bolts.framework */,
+				003C2BBA1C1484FF003876D1 /* Parse.framework */,
+				003C2BBB1C1484FF003876D1 /* ParseTwitterUtils.framework */,
+				003C2BB71C1484B0003876D1 /* Social.framework */,
+				003C2BB51C1484AA003876D1 /* Accounts.framework */,
+				003C2BB31C148498003876D1 /* libsqlite3.tbd */,
+				003C2BB11C14848A003876D1 /* libz.tbd */,
+				003C2BAF1C14847D003876D1 /* SystemConfiguration.framework */,
+				003C2BAD1C148472003876D1 /* StoreKit.framework */,
+				003C2BAB1C148451003876D1 /* Security.framework */,
+				003C2BA91C14844A003876D1 /* QuartzCore.framework */,
+				003C2BA71C148442003876D1 /* CoreLocation.framework */,
+				003C2BA51C14843B003876D1 /* CoreGraphics.framework */,
+				003C2BA31C148432003876D1 /* CFNetwork.framework */,
+				003C2BA11C14842A003876D1 /* AudioToolbox.framework */,
+			);
+			name = "Dem Frameworks";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		005F422D1C1497300065F693 /* Dem PNGs */ = {
+			isa = PBXGroup;
+			children = (
+				005F422E1C14A2D00065F693 /* mcol_frame.png */,
+				005F421F1C1493900065F693 /* Chat_bubble.png */,
+				005F42201C1493900065F693 /* speech-bubbles-2-0green-hi.png */,
+				005F42211C1493900065F693 /* speech-bubble-md.png */,
+				005F42191C1490BD0065F693 /* girl-holding-giant-paint-brush.png */,
+				005F42171C148DAF0065F693 /* continue_button.png */,
+				005F42271C1496050065F693 /* d71ddde27f5be654e3b1b4ff5ad72c8a.jpg */,
+				005F42281C1496050065F693 /* superthumb.jpg */,
+				005F42151C148CA80065F693 /* twitter.png */,
+				005F421B1C1490C80065F693 /* boy-holding-giant-paint-brush.png */,
+				005F421D1C1492A40065F693 /* speech_bubble_green.png */,
+				005F42251C1495DA0065F693 /* o6axPKQ.jpg */,
+			);
+			name = "Dem PNGs";
 			sourceTree = "<group>";
 		};
 		006958361C135397001517B6 = {
@@ -83,10 +196,13 @@
 				001AE3D91C1359FB0024E149 /* ColorScreenViewController.swift */,
 				003C2B9C1C137619003876D1 /* AdvColorsViewController.swift */,
 				003C2B9E1C138063003876D1 /* AdvColorScreenViewController.swift */,
+				005F422B1C1497230065F693 /* SignInViewController.swift */,
 				006958461C135398001517B6 /* Main.storyboard */,
 				006958491C135398001517B6 /* Assets.xcassets */,
 				0069584B1C135398001517B6 /* LaunchScreen.storyboard */,
 				0069584E1C135398001517B6 /* Info.plist */,
+				005F422D1C1497300065F693 /* Dem PNGs */,
+				003C2BBF1C148516003876D1 /* Dem Frameworks */,
 			);
 			path = FlyingColors;
 			sourceTree = "<group>";
@@ -170,7 +286,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005F42261C1495DA0065F693 /* o6axPKQ.jpg in Resources */,
+				005F42291C1496050065F693 /* d71ddde27f5be654e3b1b4ff5ad72c8a.jpg in Resources */,
+				005F422F1C14A2D00065F693 /* mcol_frame.png in Resources */,
+				005F42221C1493900065F693 /* Chat_bubble.png in Resources */,
+				005F42241C1493900065F693 /* speech-bubble-md.png in Resources */,
+				005F422A1C1496050065F693 /* superthumb.jpg in Resources */,
+				005F42181C148DAF0065F693 /* continue_button.png in Resources */,
+				005F42231C1493900065F693 /* speech-bubbles-2-0green-hi.png in Resources */,
 				0069584D1C135398001517B6 /* LaunchScreen.storyboard in Resources */,
+				005F42161C148CA80065F693 /* twitter.png in Resources */,
+				005F421C1C1490C80065F693 /* boy-holding-giant-paint-brush.png in Resources */,
+				005F421A1C1490BD0065F693 /* girl-holding-giant-paint-brush.png in Resources */,
+				005F421E1C1492A40065F693 /* speech_bubble_green.png in Resources */,
 				0069584A1C135398001517B6 /* Assets.xcassets in Resources */,
 				006958481C135398001517B6 /* Main.storyboard in Resources */,
 			);
@@ -231,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005F422C1C1497230065F693 /* SignInViewController.swift in Sources */,
 				006958451C135398001517B6 /* ColorsViewController.swift in Sources */,
 				001AE3DC1C136DD30024E149 /* NavigationController.swift in Sources */,
 				003C2B9D1C137619003876D1 /* AdvColorsViewController.swift in Sources */,
@@ -350,6 +479,10 @@
 			baseConfigurationReference = B30886A3A84F97A68D983C4B /* Pods-FlyingColors.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FlyingColors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.FlyingColors;
@@ -362,6 +495,10 @@
 			baseConfigurationReference = 49CB32CB088DC177B03878C9 /* Pods-FlyingColors.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = FlyingColors/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tiy.FlyingColors;
