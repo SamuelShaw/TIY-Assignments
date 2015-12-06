@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class AdvColorsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+class AColorsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
 
     @IBOutlet weak var tableView: UITableView!
@@ -54,6 +54,9 @@ class AdvColorsViewController: UIViewController, UITableViewDataSource, UITableV
     {
         let cell = UITableViewCell()
         cell.backgroundColor = advColors[indexPath.row]
+        let image : UIImage = UIImage(named: "1449464667_icon_24_one_finger_tap")!
+        cell.imageView!.image = image
+
         
         return cell
     }

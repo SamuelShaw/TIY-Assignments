@@ -23,18 +23,42 @@ class SignInViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    @IBAction func twitterTapped(sender: AnyObject)
+   /* func alertPop()
+    {
+        
+        let alert = UIAlertController(title: "Continue Without Sign In?", message: "Continuing without signing in disables you from sharing content. Do you wish to Continue?", preferredStyle: UIAlertControllerStyle.Alert)
+        let cancelAction = UIAlertAction(title: "Cancel", style: UIAlertActionStyle.Cancel) {
+            UIAlertAction in
+            self.dismissViewControllerAnimated(true, completion: nil)
+        
+        }
+        
+        let continueAction = UIAlertAction(title: "Continue", style: .Default, handler: { action in self.performSegueWithIdentifier("ShowContinueSegue", sender: self)
+    }) */
+        
+    
+    func continueButtonTapped(sender: AnyObject)
+    {
+       self.performSegueWithIdentifier("showContinueSegue", sender: self)
+        print("Make a Twitter you bum!")
+        // alertPop()
+    }
+    
+    
+    
+    func twitterTapped(sender: AnyObject)
     {
         PFTwitterUtils.initializeWithConsumerKey("uemth1M1j1uocMQjZw6h11Zn6", consumerSecret: "hp70En9aK51SB0w7jrmmKNqeJvDMTAwZsbYJbz66wtDGsbZ1o8")
         
         PFTwitterUtils.logInWithBlock { (user:PFUser?, error:NSError?) -> Void in
             if user == nil
             {
-                print("not working")
+                print("He's dead Jim!")
             }
             else
             {
-                print("it's working!")
+                self.performSegueWithIdentifier("ShowSignInSegue", sender: nil)
+                print("░░░░░░▄▄▄▄▄▓▓▓▄▄▄░░░░░ ░░░░▄▄▓▓▓▓▓▓▓▓▓▓▓▓▓▄░░░ ░░▄▄▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▀█▄░ ░▓▓▌▓▓▓░░▒▒▒▒▀(◐)▒▒▒▒▒█▓ ░▓▓▌▓▓░▒▒▓(◐)▓░░░▒▓▓(◐)█▓ ▓▓▌▓▓█▄█▀▄▄░▀░▀▄▄▀░░█░█ ▓▓▌▓▓▀▄█▄█░█▀▄▄▄▄▄▀██░█ ░▓▓▌▓▓░█░███▄█▄█▄███░░█ ░▓▓▌▓▓░█░███████████░░█ ░▓▓▌▓▓░█░███████████░░█ ░▓▓▌▓▓░█░███████████░░█ ░▓▓▌▓▓░▀▀█░█▀█▀█▀███░█ ░░▓▓▌▓▓░░░▀▀▄█▄█▄█▄▀░█ ░░▓▓▌▓▓▓▓▀▀▄▄▄▄▄▄▄▄▄▄▀ Hacker voice* I'm in.")
             }
         }
     }
@@ -51,3 +75,4 @@ class SignInViewController: UIViewController {
     */
 
 }
+

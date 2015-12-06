@@ -9,7 +9,7 @@
 import UIKit
 import Parse
 
-class ColorsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
+class PrimeColorsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate
 {
 
     @IBOutlet weak var tableView: UITableView!
@@ -42,6 +42,10 @@ class ColorsViewController: UIViewController, UITableViewDataSource, UITableView
     {
         let cell = UITableViewCell()
         cell.backgroundColor = self.colors[indexPath.row]
+        let image : UIImage = UIImage(named: "1449464667_icon_24_one_finger_tap")!
+        cell.imageView!.image = image
+
+
         
         return cell
     }

@@ -35,7 +35,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navBarLook = UINavigationBar.appearance()
         
         navBarLook.tintColor = UIColor.whiteColor()
-        navBarLook.barTintColor = UIColor.grayColor()
+        navBarLook.barTintColor = UIColor.clearColor()
         
         return true
     }

@@ -10,7 +10,7 @@ import UIKit
 import AVFoundation
 import Parse
 
-class AdvColorScreenViewController: UIViewController, AVSpeechSynthesizerDelegate
+class AColorScreenViewController: UIViewController, AVSpeechSynthesizerDelegate
 {
     
     let speechSynthesizer = AVSpeechSynthesizer()
@@ -38,25 +38,27 @@ class AdvColorScreenViewController: UIViewController, AVSpeechSynthesizerDelegat
 {
     if self.view.backgroundColor == UIColor(red: 229/255, green: 43/255, blue: 80/255, alpha: 1.0)
     {
-        colorNameLabel.font = colorNameLabel.font.fontWithSize(65.0)
+        colorNameLabel.font = colorNameLabel.font.fontWithSize(40.0)
         colorNameLabel.text = "AMARANTH!"
     }
     else if self.view.backgroundColor == UIColor(red: 255/255, green: 191/255, blue: 0/255, alpha: 1.0)
     {
+        colorNameLabel.font = colorNameLabel.font.fontWithSize(80.0)
         colorNameLabel.text = "AMBER!"
     }
     else if self.view.backgroundColor == UIColor(red: 153/255, green: 102/255, blue: 204/255, alpha: 1.0)
     {
-        colorNameLabel.font = colorNameLabel.font.fontWithSize(65.0)
+        colorNameLabel.font = colorNameLabel.font.fontWithSize(40.0)
         colorNameLabel.text = "AMETHYST!"
     }
     else if self.view.backgroundColor == UIColor(red: 251/255, green: 206/255, blue: 177/255, alpha: 1.0)
     {
+        colorNameLabel.font = colorNameLabel.font.fontWithSize(62.0)
         colorNameLabel.text = "APRICOT!"
     }
     else if self.view.backgroundColor == UIColor(red: 127/255, green: 255/255, blue: 112/255, alpha: 1.0)
     {
-        colorNameLabel.font = colorNameLabel.font.fontWithSize(57.0)
+        colorNameLabel.font = colorNameLabel.font.fontWithSize(40.0)
         colorNameLabel.text = "AQUAMARINE!"
     }
     else if self.view.backgroundColor == UIColor(red: 0/255, green: 127/255, blue: 255/255, alpha: 1.0)
@@ -65,10 +67,37 @@ class AdvColorScreenViewController: UIViewController, AVSpeechSynthesizerDelegat
     }
 }
 
+    //Speech
     // This is the action called when the user presses the button.
     @IBAction func sayIt(sender: AnyObject)
     {
-        let speechUtterance = AVSpeechUtterance(string: "How can you tell which one of your friends has the new iPhone 6s plus?")
+        var speechUtterance = AVSpeechUtterance(string: "")
+        
+        if self.view.backgroundColor == UIColor(red: 229/255, green: 43/255, blue: 80/255, alpha: 1.0)
+        {
+            speechUtterance = AVSpeechUtterance(string: "AMARANTH")
+        }
+         else if self.view.backgroundColor == UIColor(red: 255/255, green: 191/255, blue: 0/255, alpha: 1.0)
+        {
+            speechUtterance = AVSpeechUtterance(string: "AMBER!")
+        }
+        else if self.view.backgroundColor == UIColor(red: 153/255, green: 102/255, blue: 204/255, alpha: 1.0)
+        {
+            speechUtterance = AVSpeechUtterance(string: "AMETHYST!")
+        }
+        else if self.view.backgroundColor == UIColor(red: 251/255, green: 206/255, blue: 177/255, alpha: 1.0)
+        {
+            speechUtterance = AVSpeechUtterance(string: "Apricot!")
+        }
+        else if self.view.backgroundColor == UIColor(red: 127/255, green: 255/255, blue: 112/255, alpha: 1.0)
+        {
+            speechUtterance = AVSpeechUtterance(string: "Aquamarine!")
+        }
+        else if self.view.backgroundColor == UIColor(red: 0/255, green: 127/255, blue: 255/255, alpha: 1.0)
+        {
+            speechUtterance = AVSpeechUtterance(string: "Azure!")
+        }
+
         
         // set the voice
         speechUtterance.voice = self.speechVoice
@@ -89,9 +118,9 @@ class AdvColorScreenViewController: UIViewController, AVSpeechSynthesizerDelegat
         speechSynthesizer.speakUtterance(speechUtterance)
         
         // Give the answer, but with a different voice
-        let speechUtterance2 = AVSpeechUtterance(string: "Don't worry, they'll tell you.")
-        speechUtterance2.voice = self.speechVoice
-        speechSynthesizer.speakUtterance(speechUtterance2)
+//        let speechUtterance2 = AVSpeechUtterance(string: "Don't worry, they'll tell you.")
+//        speechUtterance2.voice = self.speechVoice
+//        speechSynthesizer.speakUtterance(speechUtterance2)
     }
     
     // Called before speaking an utterance
