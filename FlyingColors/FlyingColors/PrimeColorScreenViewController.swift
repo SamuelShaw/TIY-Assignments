@@ -32,6 +32,7 @@ class PrimeColorScreenViewController: UIViewController, AVSpeechSynthesizerDeleg
         if self.view.backgroundColor == UIColor.redColor()
         {
             colorNameLabel.text = "RED!"
+            print("Yeah you love Red huh?")
         }
         else if self.view.backgroundColor == UIColor.greenColor()
         {
@@ -40,6 +41,7 @@ class PrimeColorScreenViewController: UIViewController, AVSpeechSynthesizerDeleg
         else if self.view.backgroundColor == UIColor.blueColor()
         {
             colorNameLabel.text = "BLUE!"
+            print("everyone likes blue")
         }
         else if self.view.backgroundColor == UIColor.yellowColor()
         {
@@ -50,6 +52,7 @@ class PrimeColorScreenViewController: UIViewController, AVSpeechSynthesizerDeleg
         {
             colorNameLabel.font = colorNameLabel.font.fontWithSize(65.0)
             colorNameLabel.text = "ORANGE!"
+            print("nothing ryhmes with this dumb word")
         }
         else if self.view.backgroundColor == UIColor.brownColor()
         {
@@ -64,6 +67,7 @@ class PrimeColorScreenViewController: UIViewController, AVSpeechSynthesizerDeleg
         else if self.view.backgroundColor == UIColor.blackColor()
         {
             colorNameLabel.text = "BLACK!"
+            print("saved the best for last :p")
         }
         
     
@@ -101,7 +105,7 @@ class PrimeColorScreenViewController: UIViewController, AVSpeechSynthesizerDeleg
         {
             speechUtterance = AVSpeechUtterance(string: "Purple!")
         }
-        else if self.view.backgroundColor == UIColor.purpleColor()
+        else if self.view.backgroundColor == UIColor.blackColor()
         {
             speechUtterance = AVSpeechUtterance(string: "Black!")
         }

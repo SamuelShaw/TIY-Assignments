@@ -45,6 +45,7 @@ class BColorsScreenViewController: UIViewController, AVSpeechSynthesizerDelegate
         {
             colorNameLabel.font = colorNameLabel.font.fontWithSize(50.0)
             colorNameLabel.text = "Baby Pink!"
+            print("baby bottom pink")
         }
         else if self.view.backgroundColor == UIColor(red: 137/255, green: 207/255, blue: 240/255, alpha: 1.0)
         {

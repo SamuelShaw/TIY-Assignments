@@ -203,15 +203,7 @@
 		006958411C135397001517B6 /* FlyingColors */ = {
 			isa = PBXGroup;
 			children = (
-				006958421C135398001517B6 /* AppDelegate.swift */,
-				007218331C14B28A0016F363 /* SignInViewController.swift */,
-				001AE3DB1C136DD30024E149 /* NavigationController.swift */,
-				006958441C135398001517B6 /* PrimeColorsViewController.swift */,
-				001AE3D91C1359FB0024E149 /* PrimeColorScreenViewController.swift */,
-				003C2B9C1C137619003876D1 /* AColorsViewController.swift */,
-				003C2B9E1C138063003876D1 /* AColorScreenViewController.swift */,
-				007218351C14E0F30016F363 /* BColorsViewController.swift */,
-				007218371C14E7660016F363 /* BColorsScreenViewController.swift */,
+				007218631C15C7D10016F363 /* F */,
 				0072183B1C14F1BD0016F363 /* Vomit */,
 				005F422D1C1497300065F693 /* Dem PNGs */,
 				003C2BBF1C148516003876D1 /* Dem Frameworks */,
@@ -228,6 +220,118 @@
 				0069584E1C135398001517B6 /* Info.plist */,
 			);
 			name = Vomit;
+			sourceTree = "<group>";
+		};
+		007218631C15C7D10016F363 /* F */ = {
+			isa = PBXGroup;
+			children = (
+				007218641C15C7DD0016F363 /* L */,
+			);
+			name = F;
+			sourceTree = "<group>";
+		};
+		007218641C15C7DD0016F363 /* L */ = {
+			isa = PBXGroup;
+			children = (
+				007218651C15C7EB0016F363 /* Y */,
+			);
+			name = L;
+			sourceTree = "<group>";
+		};
+		007218651C15C7EB0016F363 /* Y */ = {
+			isa = PBXGroup;
+			children = (
+				007218661C15C7F70016F363 /* I */,
+			);
+			name = Y;
+			sourceTree = "<group>";
+		};
+		007218661C15C7F70016F363 /* I */ = {
+			isa = PBXGroup;
+			children = (
+				007218671C15C8010016F363 /* N */,
+			);
+			name = I;
+			sourceTree = "<group>";
+		};
+		007218671C15C8010016F363 /* N */ = {
+			isa = PBXGroup;
+			children = (
+				007218681C15C80B0016F363 /* G */,
+			);
+			name = N;
+			sourceTree = "<group>";
+		};
+		007218681C15C80B0016F363 /* G */ = {
+			isa = PBXGroup;
+			children = (
+				007218691C15C8180016F363 /* _ */,
+			);
+			name = G;
+			sourceTree = "<group>";
+		};
+		007218691C15C8180016F363 /* _ */ = {
+			isa = PBXGroup;
+			children = (
+				0072186A1C15C8280016F363 /* C */,
+			);
+			name = _;
+			sourceTree = "<group>";
+		};
+		0072186A1C15C8280016F363 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				0072186B1C15C8330016F363 /* O */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		0072186B1C15C8330016F363 /* O */ = {
+			isa = PBXGroup;
+			children = (
+				0072186C1C15C83C0016F363 /* L */,
+			);
+			name = O;
+			sourceTree = "<group>";
+		};
+		0072186C1C15C83C0016F363 /* L */ = {
+			isa = PBXGroup;
+			children = (
+				0072186D1C15C8480016F363 /* O */,
+			);
+			name = L;
+			sourceTree = "<group>";
+		};
+		0072186D1C15C8480016F363 /* O */ = {
+			isa = PBXGroup;
+			children = (
+				0072186E1C15C8550016F363 /* R */,
+			);
+			name = O;
+			sourceTree = "<group>";
+		};
+		0072186E1C15C8550016F363 /* R */ = {
+			isa = PBXGroup;
+			children = (
+				0072186F1C15C8600016F363 /* S */,
+			);
+			name = R;
+			sourceTree = "<group>";
+		};
+		0072186F1C15C8600016F363 /* S */ = {
+			isa = PBXGroup;
+			children = (
+				006958421C135398001517B6 /* AppDelegate.swift */,
+				007218331C14B28A0016F363 /* SignInViewController.swift */,
+				001AE3DB1C136DD30024E149 /* NavigationController.swift */,
+				006958441C135398001517B6 /* PrimeColorsViewController.swift */,
+				001AE3D91C1359FB0024E149 /* PrimeColorScreenViewController.swift */,
+				003C2B9C1C137619003876D1 /* AColorsViewController.swift */,
+				003C2B9E1C138063003876D1 /* AColorScreenViewController.swift */,
+				007218351C14E0F30016F363 /* BColorsViewController.swift */,
+				007218371C14E7660016F363 /* BColorsScreenViewController.swift */,
+			);
+			name = S;
 			sourceTree = "<group>";
 		};
 		26A68F9FD8049A6240CD459A /* Pods */ = {

@@ -40,16 +40,19 @@ class AColorScreenViewController: UIViewController, AVSpeechSynthesizerDelegate
     {
         colorNameLabel.font = colorNameLabel.font.fontWithSize(40.0)
         colorNameLabel.text = "AMARANTH!"
+        print("try saying that 20 times fast..")
     }
     else if self.view.backgroundColor == UIColor(red: 255/255, green: 191/255, blue: 0/255, alpha: 1.0)
     {
         colorNameLabel.font = colorNameLabel.font.fontWithSize(80.0)
         colorNameLabel.text = "AMBER!"
+        print("ha! your name is a color!")
     }
     else if self.view.backgroundColor == UIColor(red: 153/255, green: 102/255, blue: 204/255, alpha: 1.0)
     {
         colorNameLabel.font = colorNameLabel.font.fontWithSize(40.0)
         colorNameLabel.text = "AMETHYST!"
+        print("steven universe anyone?")
     }
     else if self.view.backgroundColor == UIColor(red: 251/255, green: 206/255, blue: 177/255, alpha: 1.0)
     {
@@ -60,6 +63,7 @@ class AColorScreenViewController: UIViewController, AVSpeechSynthesizerDelegate
     {
         colorNameLabel.font = colorNameLabel.font.fontWithSize(40.0)
         colorNameLabel.text = "AQUAMARINE!"
+        print("or submarine whatever you like.")
     }
     else if self.view.backgroundColor == UIColor(red: 0/255, green: 127/255, blue: 255/255, alpha: 1.0)
     {
