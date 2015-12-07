@@ -1,0 +1,6 @@
+framework module Pods_FlyingColors {
+  umbrella header "Pods-FlyingColors-umbrella.h"
+
+  export *
+  module * { export * }
+}
